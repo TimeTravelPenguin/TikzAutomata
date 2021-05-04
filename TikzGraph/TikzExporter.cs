@@ -7,7 +7,7 @@
 // File Name: TikzExporter.cs
 // 
 // Current Data:
-// 2021-05-04 5:35 PM
+// 2021-05-04 7:04 PM
 // 
 // Creation Date:
 // 2021-05-04 5:32 PM
@@ -17,6 +17,7 @@
 #region usings
 
 using System;
+using System.Linq;
 using TikzGraph.TikzObjects;
 
 #endregion
@@ -32,16 +33,16 @@ namespace TikzGraph
         throw new ArgumentNullException(nameof(node));
       }
 
-      var isInstance = node.IsInitialNode ? ", initial" : string.Empty;
+      var isInstance = node.IsInitialNode ? "initial" : string.Empty;
+      var xShift = node.XShift != 0 ? $"xshift={node.XShift}mm" : string.Empty;
+      var yShift = node.YShift != 0 ? $"yshift={node.YShift}mm" : string.Empty;
 
-      var xShift = node.XShift != 0 ? $", xshift={node.XShift}mm" : string.Empty;
-      var yShift = node.YShift != 0 ? $", yshift={node.YShift}mm" : string.Empty;
-      var shift = xShift + yShift;
+      var nodeArgs = new[] {"state", isInstance, xShift, yShift}.Where(x => !string.IsNullOrWhiteSpace(x));
 
       var label = node.TextMode == TextMode.MathText ? @$" {{${node.Label}$}}" : @$" {{{node.Label}}}";
       label = node.Label == string.Empty ? string.Empty : label;
 
-      return @$"\node[state{isInstance}{shift}[0]] ({node.Name}){label};";
+      return @$"\node[{string.Join(", ", nodeArgs)}[0]] ({node.Name}){label};";
     }
 
     public string CompileEdge(ITikzEdge edge)
@@ -51,14 +52,22 @@ namespace TikzGraph
         throw new ArgumentNullException(nameof(edge));
       }
 
-      var xShift = edge.XShift != 0 ? $", xshift={edge.XShift}mm" : string.Empty;
-      var yShift = edge.YShift != 0 ? $", yshift={edge.YShift}mm" : string.Empty;
-      var shift = $"[{xShift + yShift}]";
+      var textDirection = edge.TextDirection == Direction.None
+        ? string.Empty
+        : edge.TextDirection.ToString().ToLowerInvariant();
+      var edgeArgs = new[] {textDirection}.Where(x => !string.IsNullOrWhiteSpace(x));
 
       var label = edge.TextMode == TextMode.MathText ? @$" {{${edge.Label}$}}" : @$" {{{edge.Label}}}";
       label = edge.Label == string.Empty ? string.Empty : label;
 
-      return @$"([0]) edge{shift}{label} ([1])";
+      var xShift = edge.XShift != 0 ? $"xshift={edge.XShift}mm" : string.Empty;
+      var yShift = edge.YShift != 0 ? $"yshift={edge.YShift}mm" : string.Empty;
+
+      var nodeArgs = new[] {xShift, yShift}.Where(x => !string.IsNullOrWhiteSpace(x));
+      var node = $" node[{string.Join(", ", nodeArgs)}]";
+
+
+      return @$"([0]) edge[{string.Join(", ", edgeArgs)}]{node}{label} ([1])";
     }
 
     public string FormatNodeAssociation(NodeAssociation nodeAssociation)
@@ -70,7 +79,7 @@ namespace TikzGraph
 
       var directionArg = direction == Direction.None && source == target
         ? string.Empty
-        : $", {direction} of={target.Name}";
+        : $", {direction.ToString().ToLowerInvariant()} of={target.Name}";
 
       return compiled.Replace("[0]", directionArg);
     }
