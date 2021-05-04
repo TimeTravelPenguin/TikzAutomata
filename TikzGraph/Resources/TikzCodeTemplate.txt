@@ -1,0 +1,8 @@
+﻿\begin{figure}
+  \centering
+    \begin{tikzpicture}
+{0}
+    \end{tikzpicture}
+  \caption{{1}}
+  \label{fig:{2}}
+\end{figure}
