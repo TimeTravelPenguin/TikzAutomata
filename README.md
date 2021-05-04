@@ -9,6 +9,7 @@ As an example, observe the following graph:
 In LaTeX, it is made from the following code:
 ```latex
 \usepackage{tikz}
+\usetikzlibrary{automata, positioning, arrows}
 
 \begin{figure}
   \centering
