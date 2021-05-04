@@ -1,6 +1,6 @@
 # TikzGraph
 
-A library made to assist in making graph plots for LaTeX documents.
+A C# library made to assist in making Tikz graph plots for LaTeX documents.
 
 As an example, observe the following graph:
 
