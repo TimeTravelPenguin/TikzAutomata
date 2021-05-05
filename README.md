@@ -126,22 +126,21 @@ Console.WriteLine(tikz);
   An example implementation may be the following, which is a DFSM that accepts a string ending in `"b"` from the alphabet `{"a", "b"}`:
 
   ```cs
-  var q2 = new Node("q0");
+  var q0 = new Node("q0");
   var q1 = new Node("q1");
 
-  var K = new[] { q1, q2 };
+  var K = new[] { q0, q1 };
 
   var sigma = new[] { "a", "b" };
-  var gamma = sigma;
 
-  s = q1;
-  A = new[] { q2 };
+  s = q0;
+  A = new[] { q1 };
 
   var delta = new List<FsmTransition>();
-  delta.Add(new (q1, "a", q1));
-  delta.Add(new (q1, "b", q2));
-  delta.Add(new (q2, "a", q1));
-  delta.Add(new (q2, "b", q2));
+  delta.Add(new (q0, "a", q0));
+  delta.Add(new (q0, "b", q1));
+  delta.Add(new (q1, "a", q0));
+  delta.Add(new (q1, "b", q1));
 
   var figure = Figure.FromFormalDefinition(K, sigma, delta, s, A)
   figure.Build();
