@@ -1,12 +1,13 @@
 # TikzGraph
 
-A library made to assist in making graph plots for LaTeX documents.
+A C# library that is designed to generate code for graph plots for LaTeX documents.
 
 As an example, observe the following graph:
 
 <img src="./images/nn_example.png" width=500px />
 
 In LaTeX, it is made from the following code:
+
 ```latex
 \usepackage{tikz}
 
@@ -30,7 +31,8 @@ In LaTeX, it is made from the following code:
 \end{figure}
 ```
 
-This is generated using this library from the following:
+The above code is generated using this library from the following:
+
 ```cs
 var inputNodeB = new TikzNode("b", "1");
 var inputNodeX1 = new TikzNode("x1", "1.1");
@@ -60,3 +62,33 @@ figure.AddEdge(edgeLY, NodeL, NodeY);
 var tikz = figure.Build();
 Console.WriteLine(tikz);
 ```
+
+---
+
+## TODO
+
+### Planned refactors
+
+- Simplify edge-node relationships. Proposed coding semantic:
+  
+  ```cs
+  var nodeA = new Node();
+  var nodeB = new Node();
+  var nodeC = new Node();
+
+  figure = new Figure(nodeA);
+
+  // Attach edges via extensions
+  nodeA.SharesEdgeWith(nodeB)
+       .WithProperties( /* Edge properties*/ );
+
+  // Can return edge object reference     
+  var edgeAC = nodeA.SharesEdgeWith(nodeC);
+
+  figure.Build();
+  ```
+
+### Planned implementations
+
+- Support edge styling options. e.g. specify arrows `'<->'`, `'->'`, `'<-'`, and `'-'`.
+- Support self-loops / edges to self, along with the appropriate styling options.
