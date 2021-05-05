@@ -76,7 +76,7 @@ Console.WriteLine(tikz);
 
 ## Planned Refactors
 
-- Simplify edge-node relationships. Current code is in-place and too explicit.
+- Simplify edge-node relationships. The current code hard-coded and too explicit.
   Must implement visitor pattern and other design patterns to allow for a more dynamic design.
 - Proposed coding semantic:
   
