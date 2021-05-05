@@ -1,6 +1,16 @@
 # TikzGraph
 
-A C# library that is designed to generate code for graph plots for LaTeX documents.
+This is a C# library designed to generate code for graph plots for LaTeX documents.
+
+## Table of contents
+
+- [TikzGraph](#tikzgraph)
+  - [Table of contents](#table-of-contents)
+  - [Usage](#usage)
+  - [Planned Refactors](#planned-refactors)
+  - [Planned Implementations](#planned-implementations)
+
+## Usage
 
 As an example, observe the following graph:
 
@@ -10,6 +20,7 @@ In LaTeX, it is made from the following code:
 
 ```latex
 \usepackage{tikz}
+\usetikzlibrary{automata, positioning, arrows}
 
 \begin{figure}
   \centering
@@ -31,7 +42,7 @@ In LaTeX, it is made from the following code:
 \end{figure}
 ```
 
-The above code is generated using this library from the following:
+The above code, excluding the package useages, is generated using this library from the following:
 
 ```cs
 var inputNodeB = new TikzNode("b", "1");
@@ -63,13 +74,11 @@ var tikz = figure.Build();
 Console.WriteLine(tikz);
 ```
 
----
+## Planned Refactors
 
-## TODO
-
-### Planned refactors
-
-- Simplify edge-node relationships. Proposed coding semantic:
+- Simplify edge-node relationships. Current code is in-place and too explicit.
+  Must implement visitor pattern and other design patterns to allow for a more dynamic design.
+- Proposed coding semantic:
   
   ```cs
   var nodeA = new Node();
@@ -88,7 +97,15 @@ Console.WriteLine(tikz);
   figure.Build();
   ```
 
-### Planned implementations
+## Planned Implementations
 
 - Support edge styling options. e.g. specify arrows `'<->'`, `'->'`, `'<-'`, and `'-'`.
 - Support self-loops / edges to self, along with the appropriate styling options.
+- Suggest appropriate package usages. e.g. `\usetikzlibrary{automata, positioning, arrows}` when they are required to generate the required figure. Proposed implementation:
+  
+  ```cs
+  [RequiredTikzPackage("Arrows")]
+  public class SomeArrowClass { /* ... */ }
+  ```
+
+  This proposed change will require reflection to determine what packages are required when calling `TikzFigure.Build()`.
