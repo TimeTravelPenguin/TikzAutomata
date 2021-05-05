@@ -162,4 +162,4 @@ Console.WriteLine(tikz);
 
   <img src="./images/dfsm_example.png" width=500px />
 
-  Pre-requisite implementation would be auto-formatting for elements such as node directions and edge bend directions (unless somehow given). It may be incredibly difficult to construct something perfect; However, an imperfect model would suffice, but would require the user to make alterations.
+  Pre-requisite implementation would be auto-formatting for elements such as node directions and edge bend directions (unless somehow given). It may be incredibly difficult to construct something perfect; However, an imperfect model would suffice but would require the user to make alterations.
