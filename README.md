@@ -104,8 +104,15 @@ Console.WriteLine(tikz);
 - Suggest appropriate package usages. e.g. `\usetikzlibrary{automata, positioning, arrows}` when they are required to generate the required figure. Proposed implementation:
   
   ```cs
-  [RequiredTikzPackage("Arrows")]
-  public class SomeArrowClass { /* ... */ }
+  [RequiredTikzPackage("arrows")]
+  public static class SomeArrowClass
+  {
+    [RequiredTikzPackage("arrows.meta")]
+    public static void SomeArrowClassMethod()
+    {
+      /* Code */
+    }
+  }
   ```
 
-  This proposed change will require reflection to determine what packages are required when calling `TikzFigure.Build()`.
+  This proposed change will use reflection to determine what packages are required when calling `TikzFigure.Build()`.
