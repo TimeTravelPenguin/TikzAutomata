@@ -132,7 +132,6 @@ Console.WriteLine(tikz);
   var K = new[] { q1, q2 };
 
   var sigma = new[] { "a", "b" };
-  var gamma = sigma;
 
   s = q1;
   A = new[] { q2 };
