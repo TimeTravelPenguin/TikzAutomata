@@ -112,6 +112,7 @@ Console.WriteLine(tikz);
 
 - Support edge styling options. e.g. specify arrows `'<->'`, `'->'`, `'<-'`, and `'-'`.
 - Support self-loops / edges to self, along with the appropriate styling options.
+- Provide default styling (and allow it to be modified by the user) with the `\tikzset` command alongside build output.
 - Suggest appropriate package usages. e.g. `\usetikzlibrary{automata, positioning, arrows}` when they are required to generate the required figure. Proposed implementation:
   
   ```cs
