@@ -9,6 +9,7 @@ This is a C# library designed to generate code for graph plots for LaTeX documen
   - [Usage](#usage)
   - [Planned Refactors](#planned-refactors)
   - [Planned Implementations](#planned-implementations)
+  - [Potential Implementations](#potential-implementations)
 
 ## Usage
 
@@ -116,3 +117,34 @@ Console.WriteLine(tikz);
   ```
 
   This proposed change will use reflection to determine what packages are required when calling `TikzFigure.Build()`.
+
+## Potential Implementations
+
+- Extensions to construct figures using formal definitions for Autonoma.
+  An example definition would be L=(K, Σ, δ, s, A), which relates to [Finite state Machine](https://en.wikipedia.org/wiki/Finite-state_machine).
+
+  An example implementation may be the following, which is a DFSM that accepts a string ending in `"b"` from the alphabet `{"a", "b"}`:
+
+  ```cs
+  var q2 = new Node("q0");
+  var q1 = new Node("q1");
+
+  var K = new[] { q1, q2 };
+
+  var sigma = new[] { "a", "b" };
+  var gamma = sigma;
+
+  s = q1;
+  A = new[] { q2 };
+
+  var delta = new List<FsmTransition>();
+  delta.Add(new (q1, "a", q1));
+  delta.Add(new (q1, "b", q2));
+  delta.Add(new (q2, "a", q1));
+  delta.Add(new (q2, "b", q2));
+
+  var figure = Figure.FromFormalDefinition(K, sigma, delta, s, A)
+  ```
+
+  Pre-requisite implementation would be auto-formatting for note and edge positions. This may be incredibly difficult to construct something perfect. An imperfect model would suffice, but would require the use to make alterations.
+  
