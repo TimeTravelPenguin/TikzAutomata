@@ -50,8 +50,8 @@ var inputNodeB = new TikzNode("b", "1");
 var inputNodeX1 = new TikzNode("x1", "1.1");
 var inputNodeX2 = new TikzNode("x2", "0.5");
 
-var NodeL = new TikzNode("L", @"\mathcal{L}");
-var NodeY = new TikzNode("y", @"\hat{y}");
+var nodeL = new TikzNode("L", @"\mathcal{L}");
+var nodeL = new TikzNode("y", @"\hat{y}");
 
 var edgeBL = new TikzEdge("1.05", yShift: 3);
 var edgeX1L = new TikzEdge("-0.15");
@@ -63,13 +63,13 @@ var figure = new TikzFigure("A simple neural network", "simple_nn", inputNodeB);
 figure.AddNode(inputNodeX1, inputNodeB, Direction.Below);
 figure.AddNode(inputNodeX2, inputNodeX1, Direction.Below);
 
-figure.AddNode(NodeL, inputNodeX1, Direction.Right);
-figure.AddNode(NodeY, NodeL, Direction.Right);
+figure.AddNode(nodeL, inputNodeX1, Direction.Right);
+figure.AddNode(nodeL, nodeL, Direction.Right);
 
-figure.AddEdge(edgeBL, inputNodeB, NodeL);
-figure.AddEdge(edgeX1L, inputNodeX1, NodeL);
-figure.AddEdge(edgeX2L, inputNodeX2, NodeL);
-figure.AddEdge(edgeLY, NodeL, NodeY);
+figure.AddEdge(edgeBL, inputNodeB, nodeL);
+figure.AddEdge(edgeX1L, inputNodeX1, nodeL);
+figure.AddEdge(edgeX2L, inputNodeX2, nodeL);
+figure.AddEdge(edgeLY, nodeL, nodeL);
 
 var tikz = figure.Build();
 Console.WriteLine(tikz);
