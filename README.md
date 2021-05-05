@@ -25,6 +25,14 @@ In LaTeX, it is made from the following code:
 \usepackage{tikz}
 \usetikzlibrary{automata, positioning, arrows}
 
+\tikzset{%
+    ->,
+    >=stealth',
+    node distance=2cm,
+    .every state/.style={thick, fill=gray!10},
+    initial text=$ $,
+}
+
 \begin{figure}
   \centering
     \begin{tikzpicture}
@@ -45,7 +53,7 @@ In LaTeX, it is made from the following code:
 \end{figure}
 ```
 
-The above code, excluding the package usages, is generated using this library from the following:
+The above code, excluding the `\usepackage`, `\usetikzlibrary` and `\tikzset` commands, is generated using this library from the following:
 
 ```cs
 var inputNodeB = new TikzNode("b", "1");
