@@ -134,8 +134,8 @@ Console.WriteLine(tikz);
 
   var sigma = new[] { "a", "b" };
 
-  s = q0;
-  A = new[] { q1 };
+  var s = q0;
+  var A = new[] { q1 };
 
   var delta = new List<FsmTransition>();
   delta.Add(new (q0, "a", q0));
