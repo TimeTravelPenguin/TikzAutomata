@@ -144,7 +144,11 @@ Console.WriteLine(tikz);
   delta.Add(new (q2, "b", q2));
 
   var figure = Figure.FromFormalDefinition(K, sigma, delta, s, A)
+  figure.Build();
   ```
 
+  This example would produce code to build the following Autonoma:
+
+  <img src="./images/dfsm_example.png" width=500px />
+
   Pre-requisite implementation would be auto-formatting for note and edge positions. This may be incredibly difficult to construct something perfect. An imperfect model would suffice, but would require the use to make alterations.
-  
