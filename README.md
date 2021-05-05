@@ -121,7 +121,8 @@ Console.WriteLine(tikz);
 ## Potential Implementations
 
 - Extensions to construct figures using formal definitions for Autonoma.
-  An example definition would be L=(K, Σ, δ, s, A), which relates to [Finite state Machine](https://en.wikipedia.org/wiki/Finite-state_machine).
+
+  One such definition would be `M=(K, Σ, δ, s, A)`, which relates to the [Finite State Machine](https://en.wikipedia.org/wiki/Finite-state_machine). Or, more specifically, the [Deterministic Finite State Machine](https://en.wikipedia.org/wiki/Deterministic_finite_automaton).
 
   An example implementation may be the following, which is a DFSM that accepts a string ending in `"b"` from the alphabet `{"a", "b"}`:
 
