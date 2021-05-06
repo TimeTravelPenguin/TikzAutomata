@@ -53,7 +53,7 @@ In LaTeX, it is made from the following code:
 \end{figure}
 ```
 
-The above code, excluding the `\usepackage`, `\usetikzlibrary` and `\tikzset` commands, is generated using this library from the following:
+Excluding the `\usepackage`, `\usetikzlibrary` and `\tikzset` commands, and some intentionally left out code to style the image for GitHub's dark mode, the above code is generated using this library from the following:
 
 ```cs
 var inputNodeB = new TikzNode("b", "1");
