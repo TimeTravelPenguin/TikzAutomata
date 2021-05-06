@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31205.134
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TikzGraph", "TikzGraph\TikzGraph.csproj", "{1C933699-E8BB-4916-A2EE-AA46C1687891}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TikzAutonoma", "TikzGraph\TikzAutonoma.csproj", "{1C933699-E8BB-4916-A2EE-AA46C1687891}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TikzGraphConsoleApplication", "TikzGraphConsoleApplication\TikzGraphConsoleApplication.csproj", "{F38EE316-765B-40CA-9D0B-E960F954F0DA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TikzAutonomaDemos", "TikzGraphConsoleApplication\TikzAutonomaDemos.csproj", "{F38EE316-765B-40CA-9D0B-E960F954F0DA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

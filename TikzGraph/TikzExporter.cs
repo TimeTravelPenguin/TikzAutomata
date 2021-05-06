@@ -3,11 +3,11 @@
 // Name: Phillip Smith
 // 
 // Solution: TikzGraph
-// Project: TikzGraph
+// Project: TikzAutonoma
 // File Name: TikzExporter.cs
 // 
 // Current Data:
-// 2021-05-04 7:04 PM
+// 2021-05-06 9:17 PM
 // 
 // Creation Date:
 // 2021-05-04 5:32 PM
@@ -18,11 +18,11 @@
 
 using System;
 using System.Linq;
-using TikzGraph.TikzObjects;
+using TikzAutonoma.TikzObjects;
 
 #endregion
 
-namespace TikzGraph
+namespace TikzAutonoma
 {
   internal class TikzExporter : ITikzWriter
   {

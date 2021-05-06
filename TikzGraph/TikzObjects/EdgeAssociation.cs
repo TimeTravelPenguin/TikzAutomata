@@ -3,11 +3,11 @@
 // Name: Phillip Smith
 // 
 // Solution: TikzGraph
-// Project: TikzGraph
+// Project: TikzAutonoma
 // File Name: EdgeAssociation.cs
 // 
 // Current Data:
-// 2021-05-04 5:35 PM
+// 2021-05-06 9:17 PM
 // 
 // Creation Date:
 // 2021-05-04 5:34 PM
@@ -20,7 +20,7 @@ using System;
 
 #endregion
 
-namespace TikzGraph.TikzObjects
+namespace TikzAutonoma.TikzObjects
 {
   public record EdgeAssociation
   {

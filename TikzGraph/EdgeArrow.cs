@@ -3,11 +3,11 @@
 // Name: Phillip Smith
 // 
 // Solution: TikzGraph
-// Project: TikzGraph
+// Project: TikzAutonoma
 // File Name: EdgeArrow.cs
 // 
 // Current Data:
-// 2021-05-03 8:45 PM
+// 2021-05-06 9:17 PM
 // 
 // Creation Date:
 // 2021-05-03 8:45 PM
@@ -20,7 +20,7 @@ using System;
 
 #endregion
 
-namespace TikzGraph
+namespace TikzAutonoma
 {
   [Flags]
   public enum EdgeArrow : byte

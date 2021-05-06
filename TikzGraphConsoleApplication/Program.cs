@@ -3,11 +3,11 @@
 // Name: Phillip Smith
 // 
 // Solution: TikzGraph
-// Project: TikzGraphConsoleApplication
+// Project: TikzAutonomaDemos
 // File Name: Program.cs
 // 
 // Current Data:
-// 2021-05-04 7:06 PM
+// 2021-05-06 9:18 PM
 // 
 // Creation Date:
 // 2021-05-03 10:47 PM
@@ -17,12 +17,12 @@
 #region usings
 
 using System;
-using TikzGraph;
-using TikzGraph.TikzObjects;
+using TikzAutonoma;
+using TikzAutonoma.TikzObjects;
 
 #endregion
 
-namespace TikzGraphConsoleApplication
+namespace TikzAutonomaDemos
 {
   public static class Program
   {
