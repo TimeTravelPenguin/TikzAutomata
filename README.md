@@ -22,7 +22,7 @@ This is a C# library designed to generate code for graph plots for LaTeX documen
 
 ## Usage
 
-As an example, observe the following graph:
+As an example, ignoring the stroke and colour fill styling of the Tikz figure for GitHub's dark mode, observe the following graph:
 
 <img src="./images/nn_example.svg" width=500px />
 
@@ -60,7 +60,7 @@ In LaTeX, it is made from the following code:
 \end{figure}
 ```
 
-Excluding the `\usepackage`, `\usetikzlibrary` and `\tikzset` commands, and some intentionally left out code to style the image for GitHub's dark mode, the above code is generated using this library from the following:
+Excluding the `\usepackage`, `\usetikzlibrary` and `\tikzset` commands, the above code is generated using this library from the following:
 
 ```cs
 var inputNodeB = new TikzNode("b", "1");
