@@ -2,7 +2,7 @@
 
 This is a C# library designed to generate code for graph plots for LaTeX documents.
 
-<img src="./images/repository_social.png" style="display: block; margin-left: auto; margin-right: auto; width: 100%;"/>
+<img src="./images/repository_social.svg" width="800" fill="none" stroke="currentColor"/>
 
 ## Table of contents
 
