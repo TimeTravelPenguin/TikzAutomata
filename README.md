@@ -13,7 +13,7 @@
   </tr>
   <tr>
     <td colspan="2">
-      This library is currently a proof of content. Development will begin some time in June 2021.<br/>
+      This library is currently a proof of concept. Development will begin some time in June 2021.<br/>
       I hope to develop a library to make some amazing figures with ease!
     </td>
   </tr>
