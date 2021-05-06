@@ -3,11 +3,11 @@
 // Name: Phillip Smith
 // 
 // Solution: TikzGraph
-// Project: TikzGraph
+// Project: TikzAutonoma
 // File Name: ITikzWriter.cs
 // 
 // Current Data:
-// 2021-05-04 5:35 PM
+// 2021-05-06 9:17 PM
 // 
 // Creation Date:
 // 2021-05-04 9:21 AM
@@ -16,11 +16,11 @@
 
 #region usings
 
-using TikzGraph.TikzObjects;
+using TikzAutonoma.TikzObjects;
 
 #endregion
 
-namespace TikzGraph
+namespace TikzAutonoma
 {
   public interface ITikzWriter
   {
