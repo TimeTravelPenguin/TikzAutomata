@@ -2,7 +2,7 @@
 
 This is a C# library designed to generate code for graph plots for LaTeX documents.
 
-<img src="./images/repository_social.svg" width="800" fill="none" stroke="currentColor"/>
+<img src="./images/repository_social.svg" width="800" />
 
 ## Table of contents
 
@@ -17,7 +17,7 @@ This is a C# library designed to generate code for graph plots for LaTeX documen
 
 As an example, observe the following graph:
 
-<img src="./images/nn_example.png" width=500px />
+<img src="./images/nn_example.svg" width=500px />
 
 In LaTeX, it is made from the following code:
 
@@ -160,6 +160,6 @@ Console.WriteLine(tikz);
 
   This example would produce code to build the following Autonoma:
 
-  <img src="./images/dfsm_example.png" width=500px />
+  <img src="./images/dfsm_example.svg" width=500px />
 
   Pre-requisite implementation would be auto-formatting for elements such as node directions and edge bend directions (unless somehow given). It may be incredibly difficult to construct something perfect; However, an imperfect model would suffice but would require the user to make alterations.
