@@ -1,3 +1,11 @@
+![license](https://img.shields.io/github/license/TimeTravelPenguin/TikzAutonoma)
+![project size](https://img.shields.io/github/languages/code-size/TimeTravelPenguin/TikzAutonoma)
+![build status](https://img.shields.io/github/workflow/status/TimeTravelPenguin/TikzAutonoma/dotnet-build)
+
+![open issues](https://img.shields.io/github/issues/TimeTravelPenguin/TikzAutonoma)
+![latest commit](https://img.shields.io/github/last-commit/TimeTravelPenguin/TikzAutonoma/master?label=last%20commit%20master)
+
+
 # TikzGraph
 
 This is a C# library designed to generate code for graph plots for LaTeX documents.
