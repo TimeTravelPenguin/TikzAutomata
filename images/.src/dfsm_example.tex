@@ -1,16 +1,31 @@
 \documentclass[tikz]{standalone}
+
+\usepackage[outline]{contour}
 %\usepackage{tikz}
+
+\contourlength{0.35pt}
 
 % tikz setup
 \usetikzlibrary{automata, positioning, arrows}
+
+\tikzstyle{every path} = [draw=black]
+
+\tikzstyle{every state} = [fill=white]
 
 \tikzset{%
     ->,
     >=stealth',
     node distance=2cm,
-    .every state/.style={thick, fill=gray!10},
     initial text=$ $,
 }
+
+\tikzset{%
+    every edge/.style={%
+        text=white,
+    }
+}
+
+\newcommand{\nodestroke}[1]{\contour{black}{#1}}
 
 \begin{document}
     \begin{tikzpicture}
