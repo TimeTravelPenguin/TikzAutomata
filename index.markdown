@@ -4,3 +4,7 @@
 
 layout: home
 ---
+
+```cs
+Console.WriteLine("Website coming soon!")
+```

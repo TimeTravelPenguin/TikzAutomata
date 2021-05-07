@@ -22,10 +22,11 @@ title: TikzAutomota Documentation
 email: PhillipSmith@pengu.space
 description: >- # this means to ignore newlines until "baseurl:"
   Documentation for the TikzAutomota C# Library
-baseurl: "/"
 url: "https://www.tikzautonoma.com"
 twitter_username: TimeTravelPeng
 github_username: TimeTravelPenguin
+
+markdown: kramdown
 
 # Build settings
 theme: just-the-docs
