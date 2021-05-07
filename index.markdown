@@ -5,6 +5,8 @@
 layout: home
 ---
 
-```cs
-Console.WriteLine("Website coming soon!")
-```
+# Coming soon:tm:
+
+{%- highlight cs -%}
+    Console.WriteLine("Webpage documentation coming soon!!!");
+{%- endhighlight -%}

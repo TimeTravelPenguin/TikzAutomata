@@ -26,10 +26,15 @@ url: "https://www.tikzautonoma.com"
 twitter_username: TimeTravelPeng
 github_username: TimeTravelPenguin
 
-markdown: kramdown
-
 # Build settings
 theme: just-the-docs
+remote_theme: pmarsceill/just-the-docs
+
+kramdown:
+  syntax_highlighter_opts:
+    block:
+      line_numbers: false
+
 plugins:
   - jekyll-feed
 
