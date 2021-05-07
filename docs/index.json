@@ -1,0 +1,97 @@
+{
+  "api/index.html": {
+    "href": "api/index.html",
+    "title": "PLACEHOLDER | TikzAutonoma",
+    "keywords": "PLACEHOLDER TODO: Add .NET projects to the src folder and run docfx to generate REAL API Documentation !"
+  },
+  "api/TikzAutonoma.Direction.html": {
+    "href": "api/TikzAutonoma.Direction.html",
+    "title": "Enum Direction | TikzAutonoma",
+    "keywords": "Enum Direction Namespace : TikzAutonoma Assembly : TikzAutonoma.dll Syntax [Flags] public enum Direction : byte Fields Name Description Above Below Left None Right"
+  },
+  "api/TikzAutonoma.EdgeArrow.html": {
+    "href": "api/TikzAutonoma.EdgeArrow.html",
+    "title": "Enum EdgeArrow | TikzAutonoma",
+    "keywords": "Enum EdgeArrow Namespace : TikzAutonoma Assembly : TikzAutonoma.dll Syntax [Flags] public enum EdgeArrow : byte Fields Name Description Both Left None Right"
+  },
+  "api/TikzAutonoma.html": {
+    "href": "api/TikzAutonoma.html",
+    "title": "Namespace TikzAutonoma | TikzAutonoma",
+    "keywords": "Namespace TikzAutonoma Interfaces ITikzWritable ITikzWriter Enums Direction EdgeArrow TextMode"
+  },
+  "api/TikzAutonoma.ITikzWritable.html": {
+    "href": "api/TikzAutonoma.ITikzWritable.html",
+    "title": "Interface ITikzWritable | TikzAutonoma",
+    "keywords": "Interface ITikzWritable Namespace : TikzAutonoma Assembly : TikzAutonoma.dll Syntax public interface ITikzWritable Methods | Improve this Doc View Source Compile(ITikzWriter) Declaration string Compile(ITikzWriter writer) Parameters Type Name Description ITikzWriter writer Returns Type Description System.String"
+  },
+  "api/TikzAutonoma.ITikzWriter.html": {
+    "href": "api/TikzAutonoma.ITikzWriter.html",
+    "title": "Interface ITikzWriter | TikzAutonoma",
+    "keywords": "Interface ITikzWriter Namespace : TikzAutonoma Assembly : TikzAutonoma.dll Syntax public interface ITikzWriter Methods | Improve this Doc View Source CompileEdge(ITikzEdge) Declaration string CompileEdge(ITikzEdge node) Parameters Type Name Description ITikzEdge node Returns Type Description System.String | Improve this Doc View Source CompileNode(ITikzNode) Declaration string CompileNode(ITikzNode node) Parameters Type Name Description ITikzNode node Returns Type Description System.String | Improve this Doc View Source FormatEdgeAssociation(EdgeAssociation) Declaration string FormatEdgeAssociation(EdgeAssociation edgeAssociation) Parameters Type Name Description EdgeAssociation edgeAssociation Returns Type Description System.String | Improve this Doc View Source FormatNodeAssociation(NodeAssociation) Declaration string FormatNodeAssociation(NodeAssociation nodeAssociation) Parameters Type Name Description NodeAssociation nodeAssociation Returns Type Description System.String"
+  },
+  "api/TikzAutonoma.TextMode.html": {
+    "href": "api/TikzAutonoma.TextMode.html",
+    "title": "Enum TextMode | TikzAutonoma",
+    "keywords": "Enum TextMode Namespace : TikzAutonoma Assembly : TikzAutonoma.dll Syntax public enum TextMode Fields Name Description MathText PlainText"
+  },
+  "api/TikzAutonoma.TikzObjects.html": {
+    "href": "api/TikzAutonoma.TikzObjects.html",
+    "title": "Namespace TikzAutonoma.TikzObjects | TikzAutonoma",
+    "keywords": "Namespace TikzAutonoma.TikzObjects Classes TikzEdge TikzFigure TikzNode TikzObject Interfaces ITikzEdge ITikzNode ITikzObject"
+  },
+  "api/TikzAutonoma.TikzObjects.ITikzEdge.html": {
+    "href": "api/TikzAutonoma.TikzObjects.ITikzEdge.html",
+    "title": "Interface ITikzEdge | TikzAutonoma",
+    "keywords": "Interface ITikzEdge Inherited Members ITikzObject.Name ITikzObject.Label ITikzObject.TextMode ITikzObject.XShift ITikzObject.YShift ITikzWritable.Compile(ITikzWriter) Namespace : TikzAutonoma.TikzObjects Assembly : TikzAutonoma.dll Syntax public interface ITikzEdge : ITikzObject, ITikzWritable Properties | Improve this Doc View Source TextDirection Declaration Direction TextDirection { get; set; } Property Value Type Description Direction"
+  },
+  "api/TikzAutonoma.TikzObjects.ITikzNode.html": {
+    "href": "api/TikzAutonoma.TikzObjects.ITikzNode.html",
+    "title": "Interface ITikzNode | TikzAutonoma",
+    "keywords": "Interface ITikzNode Inherited Members ITikzObject.Name ITikzObject.Label ITikzObject.TextMode ITikzObject.XShift ITikzObject.YShift ITikzWritable.Compile(ITikzWriter) Namespace : TikzAutonoma.TikzObjects Assembly : TikzAutonoma.dll Syntax public interface ITikzNode : ITikzObject, ITikzWritable Properties | Improve this Doc View Source IsInitialNode Declaration bool IsInitialNode { get; set; } Property Value Type Description System.Boolean"
+  },
+  "api/TikzAutonoma.TikzObjects.ITikzObject.html": {
+    "href": "api/TikzAutonoma.TikzObjects.ITikzObject.html",
+    "title": "Interface ITikzObject | TikzAutonoma",
+    "keywords": "Interface ITikzObject Namespace : TikzAutonoma.TikzObjects Assembly : TikzAutonoma.dll Syntax public interface ITikzObject Properties | Improve this Doc View Source Label Declaration string Label { get; set; } Property Value Type Description System.String | Improve this Doc View Source Name Declaration string Name { get; set; } Property Value Type Description System.String | Improve this Doc View Source TextMode Declaration TextMode TextMode { get; set; } Property Value Type Description TextMode | Improve this Doc View Source XShift Declaration double XShift { get; set; } Property Value Type Description System.Double | Improve this Doc View Source YShift Declaration double YShift { get; set; } Property Value Type Description System.Double"
+  },
+  "api/TikzAutonoma.TikzObjects.TikzEdge.html": {
+    "href": "api/TikzAutonoma.TikzObjects.TikzEdge.html",
+    "title": "Class TikzEdge | TikzAutonoma",
+    "keywords": "Class TikzEdge Inheritance System.Object TikzObject TikzEdge Implements ITikzEdge ITikzObject ITikzWritable Inherited Members TikzObject.Label TikzObject.Name TikzObject.TextMode TikzObject.XShift TikzObject.YShift System.Object.Equals(System.Object) System.Object.Equals(System.Object, System.Object) System.Object.GetHashCode() System.Object.GetType() System.Object.MemberwiseClone() System.Object.ReferenceEquals(System.Object, System.Object) System.Object.ToString() Namespace : TikzAutonoma.TikzObjects Assembly : TikzAutonoma.dll Syntax public class TikzEdge : TikzObject, ITikzEdge, ITikzObject, ITikzWritable Constructors | Improve this Doc View Source TikzEdge(String, TextMode, Direction, Double, Double) Declaration public TikzEdge(string label, TextMode textMode = TextMode.MathText, Direction textDirection = Direction.Above, double xShift = 0, double yShift = 0) Parameters Type Name Description System.String label TextMode textMode Direction textDirection System.Double xShift System.Double yShift Properties | Improve this Doc View Source TextDirection Declaration public Direction TextDirection { get; set; } Property Value Type Description Direction Methods | Improve this Doc View Source Compile(ITikzWriter) Declaration public override string Compile(ITikzWriter writer) Parameters Type Name Description ITikzWriter writer Returns Type Description System.String Overrides TikzObject.Compile(ITikzWriter) Implements ITikzEdge ITikzObject ITikzWritable"
+  },
+  "api/TikzAutonoma.TikzObjects.TikzFigure.html": {
+    "href": "api/TikzAutonoma.TikzObjects.TikzFigure.html",
+    "title": "Class TikzFigure | TikzAutonoma",
+    "keywords": "Class TikzFigure Inheritance System.Object TikzFigure Inherited Members System.Object.Equals(System.Object) System.Object.Equals(System.Object, System.Object) System.Object.GetHashCode() System.Object.GetType() System.Object.MemberwiseClone() System.Object.ReferenceEquals(System.Object, System.Object) System.Object.ToString() Namespace : TikzAutonoma.TikzObjects Assembly : TikzAutonoma.dll Syntax public class TikzFigure Constructors | Improve this Doc View Source TikzFigure(String, String, ITikzNode) Declaration public TikzFigure(string caption, string label, ITikzNode rootNode) Parameters Type Name Description System.String caption System.String label ITikzNode rootNode Properties | Improve this Doc View Source Caption Declaration public string Caption { get; set; } Property Value Type Description System.String | Improve this Doc View Source Label Declaration public string Label { get; set; } Property Value Type Description System.String Methods | Improve this Doc View Source AddEdge(ITikzEdge, ITikzNode, ITikzNode) Declaration public void AddEdge(ITikzEdge edge, ITikzNode source, ITikzNode target) Parameters Type Name Description ITikzEdge edge ITikzNode source ITikzNode target | Improve this Doc View Source AddNode(ITikzNode, ITikzNode, Direction) Declaration public void AddNode(ITikzNode source, ITikzNode target, Direction direction) Parameters Type Name Description ITikzNode source ITikzNode target Direction direction | Improve this Doc View Source Build() Declaration public string Build() Returns Type Description System.String"
+  },
+  "api/TikzAutonoma.TikzObjects.TikzNode.html": {
+    "href": "api/TikzAutonoma.TikzObjects.TikzNode.html",
+    "title": "Class TikzNode | TikzAutonoma",
+    "keywords": "Class TikzNode Inheritance System.Object TikzObject TikzNode Implements ITikzNode ITikzObject ITikzWritable Inherited Members TikzObject.Label TikzObject.Name TikzObject.TextMode TikzObject.XShift TikzObject.YShift System.Object.Equals(System.Object) System.Object.Equals(System.Object, System.Object) System.Object.GetHashCode() System.Object.GetType() System.Object.MemberwiseClone() System.Object.ReferenceEquals(System.Object, System.Object) System.Object.ToString() Namespace : TikzAutonoma.TikzObjects Assembly : TikzAutonoma.dll Syntax public class TikzNode : TikzObject, ITikzNode, ITikzObject, ITikzWritable Constructors | Improve this Doc View Source TikzNode(String, String, TextMode, Double, Double, Boolean) Declaration public TikzNode(string name, string label, TextMode textMode = TextMode.MathText, double xShift = 0, double yShift = 0, bool isInitialNode = false) Parameters Type Name Description System.String name System.String label TextMode textMode System.Double xShift System.Double yShift System.Boolean isInitialNode Properties | Improve this Doc View Source IsInitialNode Declaration public bool IsInitialNode { get; set; } Property Value Type Description System.Boolean Methods | Improve this Doc View Source Compile(ITikzWriter) Declaration public override string Compile(ITikzWriter writer) Parameters Type Name Description ITikzWriter writer Returns Type Description System.String Overrides TikzObject.Compile(ITikzWriter) Implements ITikzNode ITikzObject ITikzWritable"
+  },
+  "api/TikzAutonoma.TikzObjects.TikzObject.html": {
+    "href": "api/TikzAutonoma.TikzObjects.TikzObject.html",
+    "title": "Class TikzObject | TikzAutonoma",
+    "keywords": "Class TikzObject Inheritance System.Object TikzObject TikzEdge TikzNode Implements ITikzWritable ITikzObject Inherited Members System.Object.Equals(System.Object) System.Object.Equals(System.Object, System.Object) System.Object.GetHashCode() System.Object.GetType() System.Object.MemberwiseClone() System.Object.ReferenceEquals(System.Object, System.Object) System.Object.ToString() Namespace : TikzAutonoma.TikzObjects Assembly : TikzAutonoma.dll Syntax public abstract class TikzObject : ITikzWritable, ITikzObject Constructors | Improve this Doc View Source TikzObject(String, String, TextMode, Double, Double) A wrapper object used for making TikzFigure objects Declaration protected TikzObject(string name, string label, TextMode textMode, double xShift, double yShift) Parameters Type Name Description System.String name The name of the object in the TikzFigure code System.String label The text shown by the object TextMode textMode Whether or not to wrap text in $$ to indicate math mode System.Double xShift System.Double yShift Properties | Improve this Doc View Source Label Declaration public string Label { get; set; } Property Value Type Description System.String | Improve this Doc View Source Name Declaration public string Name { get; set; } Property Value Type Description System.String | Improve this Doc View Source TextMode Declaration public TextMode TextMode { get; set; } Property Value Type Description TextMode | Improve this Doc View Source XShift Declaration public double XShift { get; set; } Property Value Type Description System.Double | Improve this Doc View Source YShift Declaration public double YShift { get; set; } Property Value Type Description System.Double Methods | Improve this Doc View Source Compile(ITikzWriter) Declaration public abstract string Compile(ITikzWriter writer) Parameters Type Name Description ITikzWriter writer Returns Type Description System.String Implements ITikzWritable ITikzObject"
+  },
+  "api/TikzAutonomaDemos.html": {
+    "href": "api/TikzAutonomaDemos.html",
+    "title": "Namespace TikzAutonomaDemos | TikzAutonoma",
+    "keywords": "Namespace TikzAutonomaDemos Classes Program"
+  },
+  "api/TikzAutonomaDemos.Program.html": {
+    "href": "api/TikzAutonomaDemos.Program.html",
+    "title": "Class Program | TikzAutonoma",
+    "keywords": "Class Program Inheritance System.Object Program Inherited Members System.Object.Equals(System.Object) System.Object.Equals(System.Object, System.Object) System.Object.GetHashCode() System.Object.GetType() System.Object.MemberwiseClone() System.Object.ReferenceEquals(System.Object, System.Object) System.Object.ToString() Namespace : TikzAutonomaDemos Assembly : TikzAutonomaDemos.dll Syntax public static class Program Methods | Improve this Doc View Source Main() Declaration public static void Main()"
+  },
+  "articles/intro.html": {
+    "href": "articles/intro.html",
+    "title": "Add your introductions here! | TikzAutonoma",
+    "keywords": "Add your introductions here!"
+  },
+  "index.html": {
+    "href": "index.html",
+    "title": "This is the HOMEPAGE. | TikzAutonoma",
+    "keywords": "This is the HOMEPAGE . Refer to Markdown for how to write markdown files. Quick Start Notes: Add images to the images folder if the file is referencing an image."
+  }
+}

@@ -38,13 +38,13 @@
       "exclude": [
         "bin/**",
         "obj/**",
-        "_site/**"
+        "docs/**"
       ]
     }],
     "xref": [
       "y"
     ],
-    "dest": "_site",
+    "dest": "docs",
     "globalMetadata": {
       "_appTitle": "TikzAutonoma",
       "_appFooter": "Developed by Phillip Smith",
