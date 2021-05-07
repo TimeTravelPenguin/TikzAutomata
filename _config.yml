@@ -31,3 +31,6 @@ github_username: TimeTravelPenguin
 theme: just-the-docs
 plugins:
   - jekyll-feed
+
+color_scheme: dark
+logo: "/assets/images/TikzAutonomaLogo.svg"
