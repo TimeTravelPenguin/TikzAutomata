@@ -1,0 +1,31 @@
+### YamlMime:TableOfContent
+- uid: TikzAutonoma
+  name: TikzAutonoma
+  items:
+  - uid: TikzAutonoma.Direction
+    name: Direction
+  - uid: TikzAutonoma.EdgeArrow
+    name: EdgeArrow
+  - uid: TikzAutonoma.ITikzWritable
+    name: ITikzWritable
+  - uid: TikzAutonoma.ITikzWriter
+    name: ITikzWriter
+  - uid: TikzAutonoma.TextMode
+    name: TextMode
+- uid: TikzAutonoma.TikzObjects
+  name: TikzAutonoma.TikzObjects
+  items:
+  - uid: TikzAutonoma.TikzObjects.ITikzEdge
+    name: ITikzEdge
+  - uid: TikzAutonoma.TikzObjects.ITikzNode
+    name: ITikzNode
+  - uid: TikzAutonoma.TikzObjects.ITikzObject
+    name: ITikzObject
+  - uid: TikzAutonoma.TikzObjects.TikzEdge
+    name: TikzEdge
+  - uid: TikzAutonoma.TikzObjects.TikzFigure
+    name: TikzFigure
+  - uid: TikzAutonoma.TikzObjects.TikzNode
+    name: TikzNode
+  - uid: TikzAutonoma.TikzObjects.TikzObject
+    name: TikzObject

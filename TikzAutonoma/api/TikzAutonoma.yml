@@ -1,0 +1,56 @@
+### YamlMime:ManagedReference
+items:
+- uid: TikzAutonoma
+  commentId: N:TikzAutonoma
+  id: TikzAutonoma
+  children:
+  - TikzAutonoma.Direction
+  - TikzAutonoma.EdgeArrow
+  - TikzAutonoma.ITikzWritable
+  - TikzAutonoma.ITikzWriter
+  - TikzAutonoma.TextMode
+  langs:
+  - csharp
+  - vb
+  name: TikzAutonoma
+  nameWithType: TikzAutonoma
+  fullName: TikzAutonoma
+  type: Namespace
+  assemblies:
+  - TikzAutonoma
+references:
+- uid: TikzAutonoma.Direction
+  commentId: T:TikzAutonoma.Direction
+  parent: TikzAutonoma
+  name: Direction
+  nameWithType: Direction
+  fullName: TikzAutonoma.Direction
+- uid: TikzAutonoma.EdgeArrow
+  commentId: T:TikzAutonoma.EdgeArrow
+  parent: TikzAutonoma
+  name: EdgeArrow
+  nameWithType: EdgeArrow
+  fullName: TikzAutonoma.EdgeArrow
+- uid: TikzAutonoma.ITikzWritable
+  commentId: T:TikzAutonoma.ITikzWritable
+  parent: TikzAutonoma
+  name: ITikzWritable
+  nameWithType: ITikzWritable
+  fullName: TikzAutonoma.ITikzWritable
+- uid: TikzAutonoma.ITikzWriter
+  commentId: T:TikzAutonoma.ITikzWriter
+  parent: TikzAutonoma
+  name: ITikzWriter
+  nameWithType: ITikzWriter
+  fullName: TikzAutonoma.ITikzWriter
+- uid: TikzAutonoma.TextMode
+  commentId: T:TikzAutonoma.TextMode
+  parent: TikzAutonoma
+  name: TextMode
+  nameWithType: TextMode
+  fullName: TikzAutonoma.TextMode
+- uid: TikzAutonoma
+  commentId: N:TikzAutonoma
+  name: TikzAutonoma
+  nameWithType: TikzAutonoma
+  fullName: TikzAutonoma

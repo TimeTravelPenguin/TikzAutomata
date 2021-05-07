@@ -6,6 +6,10 @@
     <RootNamespace>TikzAutonoma</RootNamespace>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>D:\Dropbox\My Stuff\C#\TikzAutonoma\TikzAutonoma\TikzAutonoma\TikzAutonoma.xml</DocumentationFile>
+  </PropertyGroup>
+
     <ItemGroup>
     <Resource Include="TikzCodeTemplate.txt">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>

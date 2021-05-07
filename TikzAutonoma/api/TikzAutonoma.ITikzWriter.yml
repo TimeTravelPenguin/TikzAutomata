@@ -1,0 +1,230 @@
+### YamlMime:ManagedReference
+items:
+- uid: TikzAutonoma.ITikzWriter
+  commentId: T:TikzAutonoma.ITikzWriter
+  id: ITikzWriter
+  parent: TikzAutonoma
+  children:
+  - TikzAutonoma.ITikzWriter.CompileEdge(TikzAutonoma.TikzObjects.ITikzEdge)
+  - TikzAutonoma.ITikzWriter.CompileNode(TikzAutonoma.TikzObjects.ITikzNode)
+  - TikzAutonoma.ITikzWriter.FormatEdgeAssociation(EdgeAssociation)
+  - TikzAutonoma.ITikzWriter.FormatNodeAssociation(NodeAssociation)
+  langs:
+  - csharp
+  - vb
+  name: ITikzWriter
+  nameWithType: ITikzWriter
+  fullName: TikzAutonoma.ITikzWriter
+  type: Interface
+  source:
+    remote:
+      path: TikzAutonoma/ITikzWriter.cs
+      branch: dev
+      repo: https://github.com/TimeTravelPenguin/TikzGraph.git
+    id: ITikzWriter
+    path: ITikzWriter.cs
+    startLine: 24
+  assemblies:
+  - TikzAutonoma
+  namespace: TikzAutonoma
+  syntax:
+    content: public interface ITikzWriter
+    content.vb: Public Interface ITikzWriter
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: TikzAutonoma.ITikzWriter.CompileNode(TikzAutonoma.TikzObjects.ITikzNode)
+  commentId: M:TikzAutonoma.ITikzWriter.CompileNode(TikzAutonoma.TikzObjects.ITikzNode)
+  id: CompileNode(TikzAutonoma.TikzObjects.ITikzNode)
+  parent: TikzAutonoma.ITikzWriter
+  langs:
+  - csharp
+  - vb
+  name: CompileNode(ITikzNode)
+  nameWithType: ITikzWriter.CompileNode(ITikzNode)
+  fullName: TikzAutonoma.ITikzWriter.CompileNode(TikzAutonoma.TikzObjects.ITikzNode)
+  type: Method
+  source:
+    remote:
+      path: TikzAutonoma/ITikzWriter.cs
+      branch: dev
+      repo: https://github.com/TimeTravelPenguin/TikzGraph.git
+    id: CompileNode
+    path: ITikzWriter.cs
+    startLine: 26
+  assemblies:
+  - TikzAutonoma
+  namespace: TikzAutonoma
+  syntax:
+    content: string CompileNode(ITikzNode node)
+    parameters:
+    - id: node
+      type: TikzAutonoma.TikzObjects.ITikzNode
+    return:
+      type: System.String
+    content.vb: Function CompileNode(node As ITikzNode) As String
+  overload: TikzAutonoma.ITikzWriter.CompileNode*
+- uid: TikzAutonoma.ITikzWriter.CompileEdge(TikzAutonoma.TikzObjects.ITikzEdge)
+  commentId: M:TikzAutonoma.ITikzWriter.CompileEdge(TikzAutonoma.TikzObjects.ITikzEdge)
+  id: CompileEdge(TikzAutonoma.TikzObjects.ITikzEdge)
+  parent: TikzAutonoma.ITikzWriter
+  langs:
+  - csharp
+  - vb
+  name: CompileEdge(ITikzEdge)
+  nameWithType: ITikzWriter.CompileEdge(ITikzEdge)
+  fullName: TikzAutonoma.ITikzWriter.CompileEdge(TikzAutonoma.TikzObjects.ITikzEdge)
+  type: Method
+  source:
+    remote:
+      path: TikzAutonoma/ITikzWriter.cs
+      branch: dev
+      repo: https://github.com/TimeTravelPenguin/TikzGraph.git
+    id: CompileEdge
+    path: ITikzWriter.cs
+    startLine: 27
+  assemblies:
+  - TikzAutonoma
+  namespace: TikzAutonoma
+  syntax:
+    content: string CompileEdge(ITikzEdge node)
+    parameters:
+    - id: node
+      type: TikzAutonoma.TikzObjects.ITikzEdge
+    return:
+      type: System.String
+    content.vb: Function CompileEdge(node As ITikzEdge) As String
+  overload: TikzAutonoma.ITikzWriter.CompileEdge*
+- uid: TikzAutonoma.ITikzWriter.FormatNodeAssociation(NodeAssociation)
+  commentId: M:TikzAutonoma.ITikzWriter.FormatNodeAssociation(NodeAssociation)
+  id: FormatNodeAssociation(NodeAssociation)
+  parent: TikzAutonoma.ITikzWriter
+  langs:
+  - csharp
+  - vb
+  name: FormatNodeAssociation(NodeAssociation)
+  nameWithType: ITikzWriter.FormatNodeAssociation(NodeAssociation)
+  fullName: TikzAutonoma.ITikzWriter.FormatNodeAssociation(NodeAssociation)
+  type: Method
+  source:
+    remote:
+      path: TikzAutonoma/ITikzWriter.cs
+      branch: dev
+      repo: https://github.com/TimeTravelPenguin/TikzGraph.git
+    id: FormatNodeAssociation
+    path: ITikzWriter.cs
+    startLine: 28
+  assemblies:
+  - TikzAutonoma
+  namespace: TikzAutonoma
+  syntax:
+    content: string FormatNodeAssociation(NodeAssociation nodeAssociation)
+    parameters:
+    - id: nodeAssociation
+      type: NodeAssociation
+    return:
+      type: System.String
+    content.vb: Function FormatNodeAssociation(nodeAssociation As NodeAssociation) As String
+  overload: TikzAutonoma.ITikzWriter.FormatNodeAssociation*
+- uid: TikzAutonoma.ITikzWriter.FormatEdgeAssociation(EdgeAssociation)
+  commentId: M:TikzAutonoma.ITikzWriter.FormatEdgeAssociation(EdgeAssociation)
+  id: FormatEdgeAssociation(EdgeAssociation)
+  parent: TikzAutonoma.ITikzWriter
+  langs:
+  - csharp
+  - vb
+  name: FormatEdgeAssociation(EdgeAssociation)
+  nameWithType: ITikzWriter.FormatEdgeAssociation(EdgeAssociation)
+  fullName: TikzAutonoma.ITikzWriter.FormatEdgeAssociation(EdgeAssociation)
+  type: Method
+  source:
+    remote:
+      path: TikzAutonoma/ITikzWriter.cs
+      branch: dev
+      repo: https://github.com/TimeTravelPenguin/TikzGraph.git
+    id: FormatEdgeAssociation
+    path: ITikzWriter.cs
+    startLine: 29
+  assemblies:
+  - TikzAutonoma
+  namespace: TikzAutonoma
+  syntax:
+    content: string FormatEdgeAssociation(EdgeAssociation edgeAssociation)
+    parameters:
+    - id: edgeAssociation
+      type: EdgeAssociation
+    return:
+      type: System.String
+    content.vb: Function FormatEdgeAssociation(edgeAssociation As EdgeAssociation) As String
+  overload: TikzAutonoma.ITikzWriter.FormatEdgeAssociation*
+references:
+- uid: TikzAutonoma
+  commentId: N:TikzAutonoma
+  name: TikzAutonoma
+  nameWithType: TikzAutonoma
+  fullName: TikzAutonoma
+- uid: TikzAutonoma.ITikzWriter.CompileNode*
+  commentId: Overload:TikzAutonoma.ITikzWriter.CompileNode
+  name: CompileNode
+  nameWithType: ITikzWriter.CompileNode
+  fullName: TikzAutonoma.ITikzWriter.CompileNode
+- uid: TikzAutonoma.TikzObjects.ITikzNode
+  commentId: T:TikzAutonoma.TikzObjects.ITikzNode
+  parent: TikzAutonoma.TikzObjects
+  name: ITikzNode
+  nameWithType: ITikzNode
+  fullName: TikzAutonoma.TikzObjects.ITikzNode
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: TikzAutonoma.TikzObjects
+  commentId: N:TikzAutonoma.TikzObjects
+  name: TikzAutonoma.TikzObjects
+  nameWithType: TikzAutonoma.TikzObjects
+  fullName: TikzAutonoma.TikzObjects
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: TikzAutonoma.ITikzWriter.CompileEdge*
+  commentId: Overload:TikzAutonoma.ITikzWriter.CompileEdge
+  name: CompileEdge
+  nameWithType: ITikzWriter.CompileEdge
+  fullName: TikzAutonoma.ITikzWriter.CompileEdge
+- uid: TikzAutonoma.TikzObjects.ITikzEdge
+  commentId: T:TikzAutonoma.TikzObjects.ITikzEdge
+  parent: TikzAutonoma.TikzObjects
+  name: ITikzEdge
+  nameWithType: ITikzEdge
+  fullName: TikzAutonoma.TikzObjects.ITikzEdge
+- uid: TikzAutonoma.ITikzWriter.FormatNodeAssociation*
+  commentId: Overload:TikzAutonoma.ITikzWriter.FormatNodeAssociation
+  name: FormatNodeAssociation
+  nameWithType: ITikzWriter.FormatNodeAssociation
+  fullName: TikzAutonoma.ITikzWriter.FormatNodeAssociation
+- uid: NodeAssociation
+  commentId: '!:NodeAssociation'
+  isExternal: true
+  name: NodeAssociation
+  nameWithType: NodeAssociation
+  fullName: NodeAssociation
+- uid: TikzAutonoma.ITikzWriter.FormatEdgeAssociation*
+  commentId: Overload:TikzAutonoma.ITikzWriter.FormatEdgeAssociation
+  name: FormatEdgeAssociation
+  nameWithType: ITikzWriter.FormatEdgeAssociation
+  fullName: TikzAutonoma.ITikzWriter.FormatEdgeAssociation
+- uid: EdgeAssociation
+  commentId: '!:EdgeAssociation'
+  isExternal: true
+  name: EdgeAssociation
+  nameWithType: EdgeAssociation
+  fullName: EdgeAssociation

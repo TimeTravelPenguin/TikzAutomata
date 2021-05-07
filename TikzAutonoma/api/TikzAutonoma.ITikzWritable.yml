@@ -1,0 +1,96 @@
+### YamlMime:ManagedReference
+items:
+- uid: TikzAutonoma.ITikzWritable
+  commentId: T:TikzAutonoma.ITikzWritable
+  id: ITikzWritable
+  parent: TikzAutonoma
+  children:
+  - TikzAutonoma.ITikzWritable.Compile(TikzAutonoma.ITikzWriter)
+  langs:
+  - csharp
+  - vb
+  name: ITikzWritable
+  nameWithType: ITikzWritable
+  fullName: TikzAutonoma.ITikzWritable
+  type: Interface
+  source:
+    remote:
+      path: TikzAutonoma/ITikzWritable.cs
+      branch: dev
+      repo: https://github.com/TimeTravelPenguin/TikzGraph.git
+    id: ITikzWritable
+    path: ITikzWritable.cs
+    startLine: 22
+  assemblies:
+  - TikzAutonoma
+  namespace: TikzAutonoma
+  syntax:
+    content: public interface ITikzWritable
+    content.vb: Public Interface ITikzWritable
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: TikzAutonoma.ITikzWritable.Compile(TikzAutonoma.ITikzWriter)
+  commentId: M:TikzAutonoma.ITikzWritable.Compile(TikzAutonoma.ITikzWriter)
+  id: Compile(TikzAutonoma.ITikzWriter)
+  parent: TikzAutonoma.ITikzWritable
+  langs:
+  - csharp
+  - vb
+  name: Compile(ITikzWriter)
+  nameWithType: ITikzWritable.Compile(ITikzWriter)
+  fullName: TikzAutonoma.ITikzWritable.Compile(TikzAutonoma.ITikzWriter)
+  type: Method
+  source:
+    remote:
+      path: TikzAutonoma/ITikzWritable.cs
+      branch: dev
+      repo: https://github.com/TimeTravelPenguin/TikzGraph.git
+    id: Compile
+    path: ITikzWritable.cs
+    startLine: 24
+  assemblies:
+  - TikzAutonoma
+  namespace: TikzAutonoma
+  syntax:
+    content: string Compile(ITikzWriter writer)
+    parameters:
+    - id: writer
+      type: TikzAutonoma.ITikzWriter
+    return:
+      type: System.String
+    content.vb: Function Compile(writer As ITikzWriter) As String
+  overload: TikzAutonoma.ITikzWritable.Compile*
+references:
+- uid: TikzAutonoma
+  commentId: N:TikzAutonoma
+  name: TikzAutonoma
+  nameWithType: TikzAutonoma
+  fullName: TikzAutonoma
+- uid: TikzAutonoma.ITikzWritable.Compile*
+  commentId: Overload:TikzAutonoma.ITikzWritable.Compile
+  name: Compile
+  nameWithType: ITikzWritable.Compile
+  fullName: TikzAutonoma.ITikzWritable.Compile
+- uid: TikzAutonoma.ITikzWriter
+  commentId: T:TikzAutonoma.ITikzWriter
+  parent: TikzAutonoma
+  name: ITikzWriter
+  nameWithType: ITikzWriter
+  fullName: TikzAutonoma.ITikzWriter
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System

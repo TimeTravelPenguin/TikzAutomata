@@ -1,0 +1,282 @@
+{
+  "homepages": [],
+  "source_base_path": "D:/Dropbox/My Stuff/C#/TikzAutonoma/TikzAutonoma/TikzAutonoma",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TikzAutonoma.Direction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TikzAutonoma.Direction.html",
+          "hash": "h+ZwYyD6KxjJO4Ej5ZekV9EphercQxSDOJ4NzmxeT1I="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TikzAutonoma.EdgeArrow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TikzAutonoma.EdgeArrow.html",
+          "hash": "tT1X9jgggvJGk1B6N7OY2vC7kqs8NvxKb412FUKzBiQ="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TikzAutonoma.ITikzWritable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TikzAutonoma.ITikzWritable.html",
+          "hash": "aRz3CS/ue+ww2larhUlqQ9tTbWwsEnDeG2dlbNvOrLU="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TikzAutonoma.ITikzWriter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TikzAutonoma.ITikzWriter.html",
+          "hash": "2V4J0YHkWJ+x61UkkxhXRKlGAiLtXNiSnkdqQhclVIE="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TikzAutonoma.TextMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TikzAutonoma.TextMode.html",
+          "hash": "dDzMjn/xFMkaGMp1BmUlpagpro56WW3Cknbi2y13djE="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TikzAutonoma.TikzObjects.ITikzEdge.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TikzAutonoma.TikzObjects.ITikzEdge.html",
+          "hash": "KykvcHOTVpjWFjwMAn7VceFSpXnuoTEz8p+QaNExA/Y="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TikzAutonoma.TikzObjects.ITikzNode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TikzAutonoma.TikzObjects.ITikzNode.html",
+          "hash": "BZUrVH0fw25+Nxj2WCHrJqH9+4Kxl1R8gZ3ldbIot4I="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TikzAutonoma.TikzObjects.ITikzObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TikzAutonoma.TikzObjects.ITikzObject.html",
+          "hash": "kMfL3gmfVKagDnqFKRvELe1LGbWPM5IMZCJSpqywPxs="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TikzAutonoma.TikzObjects.TikzEdge.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TikzAutonoma.TikzObjects.TikzEdge.html",
+          "hash": "ReANko762SSKs0IQmCz2XQWCj5M9klgflj8WK4PCBXU="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TikzAutonoma.TikzObjects.TikzFigure.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TikzAutonoma.TikzObjects.TikzFigure.html",
+          "hash": "w23UvosGWGlR3ZzCEyyrF4/7OhrZlT0564C0E+gG9UU="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TikzAutonoma.TikzObjects.TikzNode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TikzAutonoma.TikzObjects.TikzNode.html",
+          "hash": "5wCe5M4K36ma0LIlb8goMtwruApHX7YAdzDx/EP/dyk="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TikzAutonoma.TikzObjects.TikzObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TikzAutonoma.TikzObjects.TikzObject.html",
+          "hash": "+5mUwGAja3iPAXmPeXFM4fyYikiHqTI03LBjV1a2V28="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TikzAutonoma.TikzObjects.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TikzAutonoma.TikzObjects.html",
+          "hash": "0n7giFJXKSUFcXEw3PEVqVxw/7B+3QeHPB33ZOSMhMo="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TikzAutonoma.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TikzAutonoma.html",
+          "hash": "TGFRu7E+bq4LOQYL9qWON+Xi+ZRdkCZEarl/pVrvpTA="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "/AY6z1yInUKtWEymvXj1C7MhD+MSdStiYUxlDbMzNSs="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "iuoQsE4TNJk23rO+o8jKX7DrxmZwiWAfH7ymNO+rOng="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html",
+          "hash": "jPdCHXWiAH0x+29ex0uqL8AQLkm+XjM3r8vJwYEcXhM="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "BlPxk5mtl2kgfcZUgkEguqiSAR/EUyUTT4EdebwkQvs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "WSuRrYiGwKKMbtdG9z8W9fXmLoCyTnGg9AxbPKLXm2Y="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": true,
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 2,
+          "skipped_file_count": 2
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 14,
+          "skipped_file_count": 14
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": true,
+        "details": "Can support incremental post processing.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

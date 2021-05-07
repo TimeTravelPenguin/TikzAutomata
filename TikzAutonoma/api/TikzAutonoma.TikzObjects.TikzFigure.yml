@@ -1,0 +1,621 @@
+### YamlMime:ManagedReference
+items:
+- uid: TikzAutonoma.TikzObjects.TikzFigure
+  commentId: T:TikzAutonoma.TikzObjects.TikzFigure
+  id: TikzFigure
+  parent: TikzAutonoma.TikzObjects
+  children:
+  - TikzAutonoma.TikzObjects.TikzFigure.#ctor(System.String,System.String,TikzAutonoma.TikzObjects.ITikzNode)
+  - TikzAutonoma.TikzObjects.TikzFigure.AddEdge(TikzAutonoma.TikzObjects.ITikzEdge,TikzAutonoma.TikzObjects.ITikzNode,TikzAutonoma.TikzObjects.ITikzNode)
+  - TikzAutonoma.TikzObjects.TikzFigure.AddNode(TikzAutonoma.TikzObjects.ITikzNode,TikzAutonoma.TikzObjects.ITikzNode,TikzAutonoma.Direction)
+  - TikzAutonoma.TikzObjects.TikzFigure.Build
+  - TikzAutonoma.TikzObjects.TikzFigure.Caption
+  - TikzAutonoma.TikzObjects.TikzFigure.Label
+  langs:
+  - csharp
+  - vb
+  name: TikzFigure
+  nameWithType: TikzFigure
+  fullName: TikzAutonoma.TikzObjects.TikzFigure
+  type: Class
+  source:
+    remote:
+      path: TikzAutonoma/TikzObjects/TikzFigure.cs
+      branch: dev
+      repo: https://github.com/TimeTravelPenguin/TikzGraph.git
+    id: TikzFigure
+    path: TikzObjects/TikzFigure.cs
+    startLine: 27
+  assemblies:
+  - TikzAutonoma
+  namespace: TikzAutonoma.TikzObjects
+  syntax:
+    content: public class TikzFigure
+    content.vb: Public Class TikzFigure
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: TikzAutonoma.TikzObjects.TikzFigure.Caption
+  commentId: P:TikzAutonoma.TikzObjects.TikzFigure.Caption
+  id: Caption
+  parent: TikzAutonoma.TikzObjects.TikzFigure
+  langs:
+  - csharp
+  - vb
+  name: Caption
+  nameWithType: TikzFigure.Caption
+  fullName: TikzAutonoma.TikzObjects.TikzFigure.Caption
+  type: Property
+  source:
+    remote:
+      path: TikzAutonoma/TikzObjects/TikzFigure.cs
+      branch: dev
+      repo: https://github.com/TimeTravelPenguin/TikzGraph.git
+    id: Caption
+    path: TikzObjects/TikzFigure.cs
+    startLine: 32
+  assemblies:
+  - TikzAutonoma
+  namespace: TikzAutonoma.TikzObjects
+  syntax:
+    content: public string Caption { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Caption As String
+  overload: TikzAutonoma.TikzObjects.TikzFigure.Caption*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: TikzAutonoma.TikzObjects.TikzFigure.Label
+  commentId: P:TikzAutonoma.TikzObjects.TikzFigure.Label
+  id: Label
+  parent: TikzAutonoma.TikzObjects.TikzFigure
+  langs:
+  - csharp
+  - vb
+  name: Label
+  nameWithType: TikzFigure.Label
+  fullName: TikzAutonoma.TikzObjects.TikzFigure.Label
+  type: Property
+  source:
+    remote:
+      path: TikzAutonoma/TikzObjects/TikzFigure.cs
+      branch: dev
+      repo: https://github.com/TimeTravelPenguin/TikzGraph.git
+    id: Label
+    path: TikzObjects/TikzFigure.cs
+    startLine: 33
+  assemblies:
+  - TikzAutonoma
+  namespace: TikzAutonoma.TikzObjects
+  syntax:
+    content: public string Label { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Label As String
+  overload: TikzAutonoma.TikzObjects.TikzFigure.Label*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: TikzAutonoma.TikzObjects.TikzFigure.#ctor(System.String,System.String,TikzAutonoma.TikzObjects.ITikzNode)
+  commentId: M:TikzAutonoma.TikzObjects.TikzFigure.#ctor(System.String,System.String,TikzAutonoma.TikzObjects.ITikzNode)
+  id: '#ctor(System.String,System.String,TikzAutonoma.TikzObjects.ITikzNode)'
+  parent: TikzAutonoma.TikzObjects.TikzFigure
+  langs:
+  - csharp
+  - vb
+  name: TikzFigure(String, String, ITikzNode)
+  nameWithType: TikzFigure.TikzFigure(String, String, ITikzNode)
+  fullName: TikzAutonoma.TikzObjects.TikzFigure.TikzFigure(System.String, System.String, TikzAutonoma.TikzObjects.ITikzNode)
+  type: Constructor
+  source:
+    remote:
+      path: TikzAutonoma/TikzObjects/TikzFigure.cs
+      branch: dev
+      repo: https://github.com/TimeTravelPenguin/TikzGraph.git
+    id: .ctor
+    path: TikzObjects/TikzFigure.cs
+    startLine: 35
+  assemblies:
+  - TikzAutonoma
+  namespace: TikzAutonoma.TikzObjects
+  syntax:
+    content: public TikzFigure(string caption, string label, ITikzNode rootNode)
+    parameters:
+    - id: caption
+      type: System.String
+    - id: label
+      type: System.String
+    - id: rootNode
+      type: TikzAutonoma.TikzObjects.ITikzNode
+    content.vb: Public Sub New(caption As String, label As String, rootNode As ITikzNode)
+  overload: TikzAutonoma.TikzObjects.TikzFigure.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: TikzAutonoma.TikzObjects.TikzFigure.AddEdge(TikzAutonoma.TikzObjects.ITikzEdge,TikzAutonoma.TikzObjects.ITikzNode,TikzAutonoma.TikzObjects.ITikzNode)
+  commentId: M:TikzAutonoma.TikzObjects.TikzFigure.AddEdge(TikzAutonoma.TikzObjects.ITikzEdge,TikzAutonoma.TikzObjects.ITikzNode,TikzAutonoma.TikzObjects.ITikzNode)
+  id: AddEdge(TikzAutonoma.TikzObjects.ITikzEdge,TikzAutonoma.TikzObjects.ITikzNode,TikzAutonoma.TikzObjects.ITikzNode)
+  parent: TikzAutonoma.TikzObjects.TikzFigure
+  langs:
+  - csharp
+  - vb
+  name: AddEdge(ITikzEdge, ITikzNode, ITikzNode)
+  nameWithType: TikzFigure.AddEdge(ITikzEdge, ITikzNode, ITikzNode)
+  fullName: TikzAutonoma.TikzObjects.TikzFigure.AddEdge(TikzAutonoma.TikzObjects.ITikzEdge, TikzAutonoma.TikzObjects.ITikzNode, TikzAutonoma.TikzObjects.ITikzNode)
+  type: Method
+  source:
+    remote:
+      path: TikzAutonoma/TikzObjects/TikzFigure.cs
+      branch: dev
+      repo: https://github.com/TimeTravelPenguin/TikzGraph.git
+    id: AddEdge
+    path: TikzObjects/TikzFigure.cs
+    startLine: 43
+  assemblies:
+  - TikzAutonoma
+  namespace: TikzAutonoma.TikzObjects
+  syntax:
+    content: public void AddEdge(ITikzEdge edge, ITikzNode source, ITikzNode target)
+    parameters:
+    - id: edge
+      type: TikzAutonoma.TikzObjects.ITikzEdge
+    - id: source
+      type: TikzAutonoma.TikzObjects.ITikzNode
+    - id: target
+      type: TikzAutonoma.TikzObjects.ITikzNode
+    content.vb: Public Sub AddEdge(edge As ITikzEdge, source As ITikzNode, target As ITikzNode)
+  overload: TikzAutonoma.TikzObjects.TikzFigure.AddEdge*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: TikzAutonoma.TikzObjects.TikzFigure.AddNode(TikzAutonoma.TikzObjects.ITikzNode,TikzAutonoma.TikzObjects.ITikzNode,TikzAutonoma.Direction)
+  commentId: M:TikzAutonoma.TikzObjects.TikzFigure.AddNode(TikzAutonoma.TikzObjects.ITikzNode,TikzAutonoma.TikzObjects.ITikzNode,TikzAutonoma.Direction)
+  id: AddNode(TikzAutonoma.TikzObjects.ITikzNode,TikzAutonoma.TikzObjects.ITikzNode,TikzAutonoma.Direction)
+  parent: TikzAutonoma.TikzObjects.TikzFigure
+  langs:
+  - csharp
+  - vb
+  name: AddNode(ITikzNode, ITikzNode, Direction)
+  nameWithType: TikzFigure.AddNode(ITikzNode, ITikzNode, Direction)
+  fullName: TikzAutonoma.TikzObjects.TikzFigure.AddNode(TikzAutonoma.TikzObjects.ITikzNode, TikzAutonoma.TikzObjects.ITikzNode, TikzAutonoma.Direction)
+  type: Method
+  source:
+    remote:
+      path: TikzAutonoma/TikzObjects/TikzFigure.cs
+      branch: dev
+      repo: https://github.com/TimeTravelPenguin/TikzGraph.git
+    id: AddNode
+    path: TikzObjects/TikzFigure.cs
+    startLine: 48
+  assemblies:
+  - TikzAutonoma
+  namespace: TikzAutonoma.TikzObjects
+  syntax:
+    content: public void AddNode(ITikzNode source, ITikzNode target, Direction direction)
+    parameters:
+    - id: source
+      type: TikzAutonoma.TikzObjects.ITikzNode
+    - id: target
+      type: TikzAutonoma.TikzObjects.ITikzNode
+    - id: direction
+      type: TikzAutonoma.Direction
+    content.vb: Public Sub AddNode(source As ITikzNode, target As ITikzNode, direction As Direction)
+  overload: TikzAutonoma.TikzObjects.TikzFigure.AddNode*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: TikzAutonoma.TikzObjects.TikzFigure.Build
+  commentId: M:TikzAutonoma.TikzObjects.TikzFigure.Build
+  id: Build
+  parent: TikzAutonoma.TikzObjects.TikzFigure
+  langs:
+  - csharp
+  - vb
+  name: Build()
+  nameWithType: TikzFigure.Build()
+  fullName: TikzAutonoma.TikzObjects.TikzFigure.Build()
+  type: Method
+  source:
+    remote:
+      path: TikzAutonoma/TikzObjects/TikzFigure.cs
+      branch: dev
+      repo: https://github.com/TimeTravelPenguin/TikzGraph.git
+    id: Build
+    path: TikzObjects/TikzFigure.cs
+    startLine: 53
+  assemblies:
+  - TikzAutonoma
+  namespace: TikzAutonoma.TikzObjects
+  syntax:
+    content: public string Build()
+    return:
+      type: System.String
+    content.vb: Public Function Build As String
+  overload: TikzAutonoma.TikzObjects.TikzFigure.Build*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: TikzAutonoma.TikzObjects
+  commentId: N:TikzAutonoma.TikzObjects
+  name: TikzAutonoma.TikzObjects
+  nameWithType: TikzAutonoma.TikzObjects
+  fullName: TikzAutonoma.TikzObjects
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: TikzAutonoma.TikzObjects.TikzFigure.Caption*
+  commentId: Overload:TikzAutonoma.TikzObjects.TikzFigure.Caption
+  name: Caption
+  nameWithType: TikzFigure.Caption
+  fullName: TikzAutonoma.TikzObjects.TikzFigure.Caption
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: TikzAutonoma.TikzObjects.TikzFigure.Label*
+  commentId: Overload:TikzAutonoma.TikzObjects.TikzFigure.Label
+  name: Label
+  nameWithType: TikzFigure.Label
+  fullName: TikzAutonoma.TikzObjects.TikzFigure.Label
+- uid: TikzAutonoma.TikzObjects.TikzFigure.#ctor*
+  commentId: Overload:TikzAutonoma.TikzObjects.TikzFigure.#ctor
+  name: TikzFigure
+  nameWithType: TikzFigure.TikzFigure
+  fullName: TikzAutonoma.TikzObjects.TikzFigure.TikzFigure
+- uid: TikzAutonoma.TikzObjects.ITikzNode
+  commentId: T:TikzAutonoma.TikzObjects.ITikzNode
+  parent: TikzAutonoma.TikzObjects
+  name: ITikzNode
+  nameWithType: ITikzNode
+  fullName: TikzAutonoma.TikzObjects.ITikzNode
+- uid: TikzAutonoma.TikzObjects.TikzFigure.AddEdge*
+  commentId: Overload:TikzAutonoma.TikzObjects.TikzFigure.AddEdge
+  name: AddEdge
+  nameWithType: TikzFigure.AddEdge
+  fullName: TikzAutonoma.TikzObjects.TikzFigure.AddEdge
+- uid: TikzAutonoma.TikzObjects.ITikzEdge
+  commentId: T:TikzAutonoma.TikzObjects.ITikzEdge
+  parent: TikzAutonoma.TikzObjects
+  name: ITikzEdge
+  nameWithType: ITikzEdge
+  fullName: TikzAutonoma.TikzObjects.ITikzEdge
+- uid: TikzAutonoma.TikzObjects.TikzFigure.AddNode*
+  commentId: Overload:TikzAutonoma.TikzObjects.TikzFigure.AddNode
+  name: AddNode
+  nameWithType: TikzFigure.AddNode
+  fullName: TikzAutonoma.TikzObjects.TikzFigure.AddNode
+- uid: TikzAutonoma.Direction
+  commentId: T:TikzAutonoma.Direction
+  parent: TikzAutonoma
+  name: Direction
+  nameWithType: Direction
+  fullName: TikzAutonoma.Direction
+- uid: TikzAutonoma
+  commentId: N:TikzAutonoma
+  name: TikzAutonoma
+  nameWithType: TikzAutonoma
+  fullName: TikzAutonoma
+- uid: TikzAutonoma.TikzObjects.TikzFigure.Build*
+  commentId: Overload:TikzAutonoma.TikzObjects.TikzFigure.Build
+  name: Build
+  nameWithType: TikzFigure.Build
+  fullName: TikzAutonoma.TikzObjects.TikzFigure.Build

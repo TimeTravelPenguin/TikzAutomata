@@ -1,0 +1,773 @@
+### YamlMime:ManagedReference
+items:
+- uid: TikzAutonoma.TikzObjects.TikzObject
+  commentId: T:TikzAutonoma.TikzObjects.TikzObject
+  id: TikzObject
+  parent: TikzAutonoma.TikzObjects
+  children:
+  - TikzAutonoma.TikzObjects.TikzObject.#ctor(System.String,System.String,TikzAutonoma.TextMode,System.Double,System.Double)
+  - TikzAutonoma.TikzObjects.TikzObject.Compile(TikzAutonoma.ITikzWriter)
+  - TikzAutonoma.TikzObjects.TikzObject.Label
+  - TikzAutonoma.TikzObjects.TikzObject.Name
+  - TikzAutonoma.TikzObjects.TikzObject.TextMode
+  - TikzAutonoma.TikzObjects.TikzObject.XShift
+  - TikzAutonoma.TikzObjects.TikzObject.YShift
+  langs:
+  - csharp
+  - vb
+  name: TikzObject
+  nameWithType: TikzObject
+  fullName: TikzAutonoma.TikzObjects.TikzObject
+  type: Class
+  source:
+    remote:
+      path: TikzAutonoma/TikzObjects/TikzObject.cs
+      branch: dev
+      repo: https://github.com/TimeTravelPenguin/TikzGraph.git
+    id: TikzObject
+    path: TikzObjects/TikzObject.cs
+    startLine: 22
+  assemblies:
+  - TikzAutonoma
+  namespace: TikzAutonoma.TikzObjects
+  syntax:
+    content: 'public abstract class TikzObject : ITikzWritable, ITikzObject'
+    content.vb: >-
+      Public MustInherit Class TikzObject
+          Implements ITikzWritable, ITikzObject
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - TikzAutonoma.TikzObjects.TikzEdge
+  - TikzAutonoma.TikzObjects.TikzNode
+  implements:
+  - TikzAutonoma.ITikzWritable
+  - TikzAutonoma.TikzObjects.ITikzObject
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+- uid: TikzAutonoma.TikzObjects.TikzObject.Label
+  commentId: P:TikzAutonoma.TikzObjects.TikzObject.Label
+  id: Label
+  parent: TikzAutonoma.TikzObjects.TikzObject
+  langs:
+  - csharp
+  - vb
+  name: Label
+  nameWithType: TikzObject.Label
+  fullName: TikzAutonoma.TikzObjects.TikzObject.Label
+  type: Property
+  source:
+    remote:
+      path: TikzAutonoma/TikzObjects/TikzObject.cs
+      branch: dev
+      repo: https://github.com/TimeTravelPenguin/TikzGraph.git
+    id: Label
+    path: TikzObjects/TikzObject.cs
+    startLine: 24
+  assemblies:
+  - TikzAutonoma
+  namespace: TikzAutonoma.TikzObjects
+  syntax:
+    content: public string Label { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Label As String
+  overload: TikzAutonoma.TikzObjects.TikzObject.Label*
+  implements:
+  - TikzAutonoma.TikzObjects.ITikzObject.Label
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: TikzAutonoma.TikzObjects.TikzObject.Name
+  commentId: P:TikzAutonoma.TikzObjects.TikzObject.Name
+  id: Name
+  parent: TikzAutonoma.TikzObjects.TikzObject
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: TikzObject.Name
+  fullName: TikzAutonoma.TikzObjects.TikzObject.Name
+  type: Property
+  source:
+    remote:
+      path: TikzAutonoma/TikzObjects/TikzObject.cs
+      branch: dev
+      repo: https://github.com/TimeTravelPenguin/TikzGraph.git
+    id: Name
+    path: TikzObjects/TikzObject.cs
+    startLine: 25
+  assemblies:
+  - TikzAutonoma
+  namespace: TikzAutonoma.TikzObjects
+  syntax:
+    content: public string Name { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Name As String
+  overload: TikzAutonoma.TikzObjects.TikzObject.Name*
+  implements:
+  - TikzAutonoma.TikzObjects.ITikzObject.Name
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: TikzAutonoma.TikzObjects.TikzObject.TextMode
+  commentId: P:TikzAutonoma.TikzObjects.TikzObject.TextMode
+  id: TextMode
+  parent: TikzAutonoma.TikzObjects.TikzObject
+  langs:
+  - csharp
+  - vb
+  name: TextMode
+  nameWithType: TikzObject.TextMode
+  fullName: TikzAutonoma.TikzObjects.TikzObject.TextMode
+  type: Property
+  source:
+    remote:
+      path: TikzAutonoma/TikzObjects/TikzObject.cs
+      branch: dev
+      repo: https://github.com/TimeTravelPenguin/TikzGraph.git
+    id: TextMode
+    path: TikzObjects/TikzObject.cs
+    startLine: 26
+  assemblies:
+  - TikzAutonoma
+  namespace: TikzAutonoma.TikzObjects
+  syntax:
+    content: public TextMode TextMode { get; set; }
+    parameters: []
+    return:
+      type: TikzAutonoma.TextMode
+    content.vb: Public Property TextMode As TextMode
+  overload: TikzAutonoma.TikzObjects.TikzObject.TextMode*
+  implements:
+  - TikzAutonoma.TikzObjects.ITikzObject.TextMode
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: TikzAutonoma.TikzObjects.TikzObject.XShift
+  commentId: P:TikzAutonoma.TikzObjects.TikzObject.XShift
+  id: XShift
+  parent: TikzAutonoma.TikzObjects.TikzObject
+  langs:
+  - csharp
+  - vb
+  name: XShift
+  nameWithType: TikzObject.XShift
+  fullName: TikzAutonoma.TikzObjects.TikzObject.XShift
+  type: Property
+  source:
+    remote:
+      path: TikzAutonoma/TikzObjects/TikzObject.cs
+      branch: dev
+      repo: https://github.com/TimeTravelPenguin/TikzGraph.git
+    id: XShift
+    path: TikzObjects/TikzObject.cs
+    startLine: 27
+  assemblies:
+  - TikzAutonoma
+  namespace: TikzAutonoma.TikzObjects
+  syntax:
+    content: public double XShift { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property XShift As Double
+  overload: TikzAutonoma.TikzObjects.TikzObject.XShift*
+  implements:
+  - TikzAutonoma.TikzObjects.ITikzObject.XShift
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: TikzAutonoma.TikzObjects.TikzObject.YShift
+  commentId: P:TikzAutonoma.TikzObjects.TikzObject.YShift
+  id: YShift
+  parent: TikzAutonoma.TikzObjects.TikzObject
+  langs:
+  - csharp
+  - vb
+  name: YShift
+  nameWithType: TikzObject.YShift
+  fullName: TikzAutonoma.TikzObjects.TikzObject.YShift
+  type: Property
+  source:
+    remote:
+      path: TikzAutonoma/TikzObjects/TikzObject.cs
+      branch: dev
+      repo: https://github.com/TimeTravelPenguin/TikzGraph.git
+    id: YShift
+    path: TikzObjects/TikzObject.cs
+    startLine: 28
+  assemblies:
+  - TikzAutonoma
+  namespace: TikzAutonoma.TikzObjects
+  syntax:
+    content: public double YShift { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property YShift As Double
+  overload: TikzAutonoma.TikzObjects.TikzObject.YShift*
+  implements:
+  - TikzAutonoma.TikzObjects.ITikzObject.YShift
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: TikzAutonoma.TikzObjects.TikzObject.Compile(TikzAutonoma.ITikzWriter)
+  commentId: M:TikzAutonoma.TikzObjects.TikzObject.Compile(TikzAutonoma.ITikzWriter)
+  id: Compile(TikzAutonoma.ITikzWriter)
+  parent: TikzAutonoma.TikzObjects.TikzObject
+  langs:
+  - csharp
+  - vb
+  name: Compile(ITikzWriter)
+  nameWithType: TikzObject.Compile(ITikzWriter)
+  fullName: TikzAutonoma.TikzObjects.TikzObject.Compile(TikzAutonoma.ITikzWriter)
+  type: Method
+  source:
+    remote:
+      path: TikzAutonoma/TikzObjects/TikzObject.cs
+      branch: dev
+      repo: https://github.com/TimeTravelPenguin/TikzGraph.git
+    id: Compile
+    path: TikzObjects/TikzObject.cs
+    startLine: 30
+  assemblies:
+  - TikzAutonoma
+  namespace: TikzAutonoma.TikzObjects
+  syntax:
+    content: public abstract string Compile(ITikzWriter writer)
+    parameters:
+    - id: writer
+      type: TikzAutonoma.ITikzWriter
+    return:
+      type: System.String
+    content.vb: Public MustOverride Function Compile(writer As ITikzWriter) As String
+  overload: TikzAutonoma.TikzObjects.TikzObject.Compile*
+  implements:
+  - TikzAutonoma.ITikzWritable.Compile(TikzAutonoma.ITikzWriter)
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+- uid: TikzAutonoma.TikzObjects.TikzObject.#ctor(System.String,System.String,TikzAutonoma.TextMode,System.Double,System.Double)
+  commentId: M:TikzAutonoma.TikzObjects.TikzObject.#ctor(System.String,System.String,TikzAutonoma.TextMode,System.Double,System.Double)
+  id: '#ctor(System.String,System.String,TikzAutonoma.TextMode,System.Double,System.Double)'
+  parent: TikzAutonoma.TikzObjects.TikzObject
+  langs:
+  - csharp
+  - vb
+  name: TikzObject(String, String, TextMode, Double, Double)
+  nameWithType: TikzObject.TikzObject(String, String, TextMode, Double, Double)
+  fullName: TikzAutonoma.TikzObjects.TikzObject.TikzObject(System.String, System.String, TikzAutonoma.TextMode, System.Double, System.Double)
+  type: Constructor
+  source:
+    remote:
+      path: TikzAutonoma/TikzObjects/TikzObject.cs
+      branch: dev
+      repo: https://github.com/TimeTravelPenguin/TikzGraph.git
+    id: .ctor
+    path: TikzObjects/TikzObject.cs
+    startLine: 38
+  assemblies:
+  - TikzAutonoma
+  namespace: TikzAutonoma.TikzObjects
+  summary: "\nA wrapper object used for making TikzFigure objects\n"
+  example: []
+  syntax:
+    content: protected TikzObject(string name, string label, TextMode textMode, double xShift, double yShift)
+    parameters:
+    - id: name
+      type: System.String
+      description: The name of the object in the TikzFigure code
+    - id: label
+      type: System.String
+      description: The text shown by the object
+    - id: textMode
+      type: TikzAutonoma.TextMode
+      description: Whether or not to wrap text in $$ to indicate math mode
+    - id: xShift
+      type: System.Double
+    - id: yShift
+      type: System.Double
+    content.vb: Protected Sub New(name As String, label As String, textMode As TextMode, xShift As Double, yShift As Double)
+  overload: TikzAutonoma.TikzObjects.TikzObject.#ctor*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+references:
+- uid: TikzAutonoma.TikzObjects
+  commentId: N:TikzAutonoma.TikzObjects
+  name: TikzAutonoma.TikzObjects
+  nameWithType: TikzAutonoma.TikzObjects
+  fullName: TikzAutonoma.TikzObjects
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: TikzAutonoma.ITikzWritable
+  commentId: T:TikzAutonoma.ITikzWritable
+  parent: TikzAutonoma
+  name: ITikzWritable
+  nameWithType: ITikzWritable
+  fullName: TikzAutonoma.ITikzWritable
+- uid: TikzAutonoma.TikzObjects.ITikzObject
+  commentId: T:TikzAutonoma.TikzObjects.ITikzObject
+  parent: TikzAutonoma.TikzObjects
+  name: ITikzObject
+  nameWithType: ITikzObject
+  fullName: TikzAutonoma.TikzObjects.ITikzObject
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: TikzAutonoma
+  commentId: N:TikzAutonoma
+  name: TikzAutonoma
+  nameWithType: TikzAutonoma
+  fullName: TikzAutonoma
+- uid: TikzAutonoma.TikzObjects.TikzObject.Label*
+  commentId: Overload:TikzAutonoma.TikzObjects.TikzObject.Label
+  name: Label
+  nameWithType: TikzObject.Label
+  fullName: TikzAutonoma.TikzObjects.TikzObject.Label
+- uid: TikzAutonoma.TikzObjects.ITikzObject.Label
+  commentId: P:TikzAutonoma.TikzObjects.ITikzObject.Label
+  parent: TikzAutonoma.TikzObjects.ITikzObject
+  name: Label
+  nameWithType: ITikzObject.Label
+  fullName: TikzAutonoma.TikzObjects.ITikzObject.Label
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: TikzAutonoma.TikzObjects.TikzObject.Name*
+  commentId: Overload:TikzAutonoma.TikzObjects.TikzObject.Name
+  name: Name
+  nameWithType: TikzObject.Name
+  fullName: TikzAutonoma.TikzObjects.TikzObject.Name
+- uid: TikzAutonoma.TikzObjects.ITikzObject.Name
+  commentId: P:TikzAutonoma.TikzObjects.ITikzObject.Name
+  parent: TikzAutonoma.TikzObjects.ITikzObject
+  name: Name
+  nameWithType: ITikzObject.Name
+  fullName: TikzAutonoma.TikzObjects.ITikzObject.Name
+- uid: TikzAutonoma.TikzObjects.TikzObject.TextMode*
+  commentId: Overload:TikzAutonoma.TikzObjects.TikzObject.TextMode
+  name: TextMode
+  nameWithType: TikzObject.TextMode
+  fullName: TikzAutonoma.TikzObjects.TikzObject.TextMode
+- uid: TikzAutonoma.TikzObjects.ITikzObject.TextMode
+  commentId: P:TikzAutonoma.TikzObjects.ITikzObject.TextMode
+  parent: TikzAutonoma.TikzObjects.ITikzObject
+  name: TextMode
+  nameWithType: ITikzObject.TextMode
+  fullName: TikzAutonoma.TikzObjects.ITikzObject.TextMode
+- uid: TikzAutonoma.TextMode
+  commentId: T:TikzAutonoma.TextMode
+  parent: TikzAutonoma
+  name: TextMode
+  nameWithType: TextMode
+  fullName: TikzAutonoma.TextMode
+- uid: TikzAutonoma.TikzObjects.TikzObject.XShift*
+  commentId: Overload:TikzAutonoma.TikzObjects.TikzObject.XShift
+  name: XShift
+  nameWithType: TikzObject.XShift
+  fullName: TikzAutonoma.TikzObjects.TikzObject.XShift
+- uid: TikzAutonoma.TikzObjects.ITikzObject.XShift
+  commentId: P:TikzAutonoma.TikzObjects.ITikzObject.XShift
+  parent: TikzAutonoma.TikzObjects.ITikzObject
+  name: XShift
+  nameWithType: ITikzObject.XShift
+  fullName: TikzAutonoma.TikzObjects.ITikzObject.XShift
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
+- uid: TikzAutonoma.TikzObjects.TikzObject.YShift*
+  commentId: Overload:TikzAutonoma.TikzObjects.TikzObject.YShift
+  name: YShift
+  nameWithType: TikzObject.YShift
+  fullName: TikzAutonoma.TikzObjects.TikzObject.YShift
+- uid: TikzAutonoma.TikzObjects.ITikzObject.YShift
+  commentId: P:TikzAutonoma.TikzObjects.ITikzObject.YShift
+  parent: TikzAutonoma.TikzObjects.ITikzObject
+  name: YShift
+  nameWithType: ITikzObject.YShift
+  fullName: TikzAutonoma.TikzObjects.ITikzObject.YShift
+- uid: TikzAutonoma.TikzObjects.TikzObject.Compile*
+  commentId: Overload:TikzAutonoma.TikzObjects.TikzObject.Compile
+  name: Compile
+  nameWithType: TikzObject.Compile
+  fullName: TikzAutonoma.TikzObjects.TikzObject.Compile
+- uid: TikzAutonoma.ITikzWritable.Compile(TikzAutonoma.ITikzWriter)
+  commentId: M:TikzAutonoma.ITikzWritable.Compile(TikzAutonoma.ITikzWriter)
+  parent: TikzAutonoma.ITikzWritable
+  name: Compile(ITikzWriter)
+  nameWithType: ITikzWritable.Compile(ITikzWriter)
+  fullName: TikzAutonoma.ITikzWritable.Compile(TikzAutonoma.ITikzWriter)
+  spec.csharp:
+  - uid: TikzAutonoma.ITikzWritable.Compile(TikzAutonoma.ITikzWriter)
+    name: Compile
+    nameWithType: ITikzWritable.Compile
+    fullName: TikzAutonoma.ITikzWritable.Compile
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: TikzAutonoma.ITikzWriter
+    name: ITikzWriter
+    nameWithType: ITikzWriter
+    fullName: TikzAutonoma.ITikzWriter
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: TikzAutonoma.ITikzWritable.Compile(TikzAutonoma.ITikzWriter)
+    name: Compile
+    nameWithType: ITikzWritable.Compile
+    fullName: TikzAutonoma.ITikzWritable.Compile
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: TikzAutonoma.ITikzWriter
+    name: ITikzWriter
+    nameWithType: ITikzWriter
+    fullName: TikzAutonoma.ITikzWriter
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TikzAutonoma.ITikzWriter
+  commentId: T:TikzAutonoma.ITikzWriter
+  parent: TikzAutonoma
+  name: ITikzWriter
+  nameWithType: ITikzWriter
+  fullName: TikzAutonoma.ITikzWriter
+- uid: TikzAutonoma.TikzObjects.TikzObject.#ctor*
+  commentId: Overload:TikzAutonoma.TikzObjects.TikzObject.#ctor
+  name: TikzObject
+  nameWithType: TikzObject.TikzObject
+  fullName: TikzAutonoma.TikzObjects.TikzObject.TikzObject

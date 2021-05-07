@@ -1,0 +1,112 @@
+### YamlMime:ManagedReference
+items:
+- uid: TikzAutonoma.TextMode
+  commentId: T:TikzAutonoma.TextMode
+  id: TextMode
+  parent: TikzAutonoma
+  children:
+  - TikzAutonoma.TextMode.MathText
+  - TikzAutonoma.TextMode.PlainText
+  langs:
+  - csharp
+  - vb
+  name: TextMode
+  nameWithType: TextMode
+  fullName: TikzAutonoma.TextMode
+  type: Enum
+  source:
+    remote:
+      path: TikzAutonoma/TextMode.cs
+      branch: dev
+      repo: https://github.com/TimeTravelPenguin/TikzGraph.git
+    id: TextMode
+    path: TextMode.cs
+    startLine: 18
+  assemblies:
+  - TikzAutonoma
+  namespace: TikzAutonoma
+  syntax:
+    content: public enum TextMode
+    content.vb: Public Enum TextMode
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: TikzAutonoma.TextMode.PlainText
+  commentId: F:TikzAutonoma.TextMode.PlainText
+  id: PlainText
+  parent: TikzAutonoma.TextMode
+  langs:
+  - csharp
+  - vb
+  name: PlainText
+  nameWithType: TextMode.PlainText
+  fullName: TikzAutonoma.TextMode.PlainText
+  type: Field
+  source:
+    remote:
+      path: TikzAutonoma/TextMode.cs
+      branch: dev
+      repo: https://github.com/TimeTravelPenguin/TikzGraph.git
+    id: PlainText
+    path: TextMode.cs
+    startLine: 20
+  assemblies:
+  - TikzAutonoma
+  namespace: TikzAutonoma
+  syntax:
+    content: PlainText = 0
+    return:
+      type: TikzAutonoma.TextMode
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: TikzAutonoma.TextMode.MathText
+  commentId: F:TikzAutonoma.TextMode.MathText
+  id: MathText
+  parent: TikzAutonoma.TextMode
+  langs:
+  - csharp
+  - vb
+  name: MathText
+  nameWithType: TextMode.MathText
+  fullName: TikzAutonoma.TextMode.MathText
+  type: Field
+  source:
+    remote:
+      path: TikzAutonoma/TextMode.cs
+      branch: dev
+      repo: https://github.com/TimeTravelPenguin/TikzGraph.git
+    id: MathText
+    path: TextMode.cs
+    startLine: 21
+  assemblies:
+  - TikzAutonoma
+  namespace: TikzAutonoma
+  syntax:
+    content: MathText = 1
+    return:
+      type: TikzAutonoma.TextMode
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: TikzAutonoma
+  commentId: N:TikzAutonoma
+  name: TikzAutonoma
+  nameWithType: TikzAutonoma
+  fullName: TikzAutonoma
+- uid: TikzAutonoma.TextMode
+  commentId: T:TikzAutonoma.TextMode
+  parent: TikzAutonoma
+  name: TextMode
+  nameWithType: TextMode
+  fullName: TikzAutonoma.TextMode
