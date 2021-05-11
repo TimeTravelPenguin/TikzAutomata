@@ -83,7 +83,8 @@
   
   <h1 id="TikzAutonoma_TikzObjects_TikzObject" data-uid="TikzAutonoma.TikzObjects.TikzObject" class="text-break">Class TikzObject
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Base class used for all Tikz objects</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -134,11 +135,11 @@
     <a href="https://github.com/TimeTravelPenguin/TikzAutonoma/new/dev/apiSpec/new?filename=TikzAutonoma_TikzObjects_TikzObject__ctor_System_String_System_String_TikzAutonoma_TextMode_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20TikzAutonoma.TikzObjects.TikzObject.%23ctor(System.String%2CSystem.String%2CTikzAutonoma.TextMode%2CSystem.Double%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TimeTravelPenguin/TikzGraph/blob/dev/TikzAutonoma/TikzObjects/TikzObject.cs/#L39">View Source</a>
+    <a href="https://github.com/TimeTravelPenguin/TikzGraph/blob/dev/TikzAutonoma/TikzObjects/TikzObject.cs/#L68">View Source</a>
   </span>
   <a id="TikzAutonoma_TikzObjects_TikzObject__ctor_" data-uid="TikzAutonoma.TikzObjects.TikzObject.#ctor*"></a>
   <h4 id="TikzAutonoma_TikzObjects_TikzObject__ctor_System_String_System_String_TikzAutonoma_TextMode_System_Double_System_Double_" data-uid="TikzAutonoma.TikzObjects.TikzObject.#ctor(System.String,System.String,TikzAutonoma.TextMode,System.Double,System.Double)">TikzObject(String, String, TextMode, Double, Double)</h4>
-  <div class="markdown level1 summary"><p>A wrapper object used for making TikzFigure objects</p>
+  <div class="markdown level1 summary"><p>Base constructor used for making new Tikz objects</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -158,30 +159,32 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">name</span></td>
-        <td><p>The name of the object in the TikzFigure code</p>
+        <td><p>The name used to reference this node in the Tikz figure</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">label</span></td>
-        <td><p>The text shown by the object</p>
+        <td><p>The text present shown within this object</p>
 </td>
       </tr>
       <tr>
         <td><a class="xref" href="TikzAutonoma.TextMode.html">TextMode</a></td>
         <td><span class="parametername">textMode</span></td>
-        <td><p>Whether or not to wrap text in $$ to indicate math mode</p>
+        <td><p>Indicates whether or not to enclose the compiled label in $ $</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">System.Double</span></td>
         <td><span class="parametername">xShift</span></td>
-        <td></td>
+        <td><p>Shift the label text along the x-axis</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Double</span></td>
         <td><span class="parametername">yShift</span></td>
-        <td></td>
+        <td><p>Shift the label text along the y-axis</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -192,11 +195,12 @@
     <a href="https://github.com/TimeTravelPenguin/TikzAutonoma/new/dev/apiSpec/new?filename=TikzAutonoma_TikzObjects_TikzObject_Label.md&amp;value=---%0Auid%3A%20TikzAutonoma.TikzObjects.TikzObject.Label%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TimeTravelPenguin/TikzGraph/blob/dev/TikzAutonoma/TikzObjects/TikzObject.cs/#L25">View Source</a>
+    <a href="https://github.com/TimeTravelPenguin/TikzGraph/blob/dev/TikzAutonoma/TikzObjects/TikzObject.cs/#L31">View Source</a>
   </span>
   <a id="TikzAutonoma_TikzObjects_TikzObject_Label_" data-uid="TikzAutonoma.TikzObjects.TikzObject.Label*"></a>
   <h4 id="TikzAutonoma_TikzObjects_TikzObject_Label" data-uid="TikzAutonoma.TikzObjects.TikzObject.Label">Label</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The text present shown within this object</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -222,11 +226,12 @@
     <a href="https://github.com/TimeTravelPenguin/TikzAutonoma/new/dev/apiSpec/new?filename=TikzAutonoma_TikzObjects_TikzObject_Name.md&amp;value=---%0Auid%3A%20TikzAutonoma.TikzObjects.TikzObject.Name%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TimeTravelPenguin/TikzGraph/blob/dev/TikzAutonoma/TikzObjects/TikzObject.cs/#L26">View Source</a>
+    <a href="https://github.com/TimeTravelPenguin/TikzGraph/blob/dev/TikzAutonoma/TikzObjects/TikzObject.cs/#L36">View Source</a>
   </span>
   <a id="TikzAutonoma_TikzObjects_TikzObject_Name_" data-uid="TikzAutonoma.TikzObjects.TikzObject.Name*"></a>
   <h4 id="TikzAutonoma_TikzObjects_TikzObject_Name" data-uid="TikzAutonoma.TikzObjects.TikzObject.Name">Name</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The name used to reference this node in the Tikz figure</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -252,11 +257,12 @@
     <a href="https://github.com/TimeTravelPenguin/TikzAutonoma/new/dev/apiSpec/new?filename=TikzAutonoma_TikzObjects_TikzObject_TextMode.md&amp;value=---%0Auid%3A%20TikzAutonoma.TikzObjects.TikzObject.TextMode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TimeTravelPenguin/TikzGraph/blob/dev/TikzAutonoma/TikzObjects/TikzObject.cs/#L27">View Source</a>
+    <a href="https://github.com/TimeTravelPenguin/TikzGraph/blob/dev/TikzAutonoma/TikzObjects/TikzObject.cs/#L41">View Source</a>
   </span>
   <a id="TikzAutonoma_TikzObjects_TikzObject_TextMode_" data-uid="TikzAutonoma.TikzObjects.TikzObject.TextMode*"></a>
   <h4 id="TikzAutonoma_TikzObjects_TikzObject_TextMode" data-uid="TikzAutonoma.TikzObjects.TikzObject.TextMode">TextMode</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Indicates whether or not to enclose the compiled label in $ $</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -282,11 +288,12 @@
     <a href="https://github.com/TimeTravelPenguin/TikzAutonoma/new/dev/apiSpec/new?filename=TikzAutonoma_TikzObjects_TikzObject_XShift.md&amp;value=---%0Auid%3A%20TikzAutonoma.TikzObjects.TikzObject.XShift%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TimeTravelPenguin/TikzGraph/blob/dev/TikzAutonoma/TikzObjects/TikzObject.cs/#L28">View Source</a>
+    <a href="https://github.com/TimeTravelPenguin/TikzGraph/blob/dev/TikzAutonoma/TikzObjects/TikzObject.cs/#L46">View Source</a>
   </span>
   <a id="TikzAutonoma_TikzObjects_TikzObject_XShift_" data-uid="TikzAutonoma.TikzObjects.TikzObject.XShift*"></a>
   <h4 id="TikzAutonoma_TikzObjects_TikzObject_XShift" data-uid="TikzAutonoma.TikzObjects.TikzObject.XShift">XShift</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Shift the label text along the x-axis</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -312,11 +319,12 @@
     <a href="https://github.com/TimeTravelPenguin/TikzAutonoma/new/dev/apiSpec/new?filename=TikzAutonoma_TikzObjects_TikzObject_YShift.md&amp;value=---%0Auid%3A%20TikzAutonoma.TikzObjects.TikzObject.YShift%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TimeTravelPenguin/TikzGraph/blob/dev/TikzAutonoma/TikzObjects/TikzObject.cs/#L29">View Source</a>
+    <a href="https://github.com/TimeTravelPenguin/TikzGraph/blob/dev/TikzAutonoma/TikzObjects/TikzObject.cs/#L51">View Source</a>
   </span>
   <a id="TikzAutonoma_TikzObjects_TikzObject_YShift_" data-uid="TikzAutonoma.TikzObjects.TikzObject.YShift*"></a>
   <h4 id="TikzAutonoma_TikzObjects_TikzObject_YShift" data-uid="TikzAutonoma.TikzObjects.TikzObject.YShift">YShift</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Shift the label text along the y-axis</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -344,11 +352,12 @@
     <a href="https://github.com/TimeTravelPenguin/TikzAutonoma/new/dev/apiSpec/new?filename=TikzAutonoma_TikzObjects_TikzObject_Compile_TikzAutonoma_ITikzWriter_.md&amp;value=---%0Auid%3A%20TikzAutonoma.TikzObjects.TikzObject.Compile(TikzAutonoma.ITikzWriter)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TimeTravelPenguin/TikzGraph/blob/dev/TikzAutonoma/TikzObjects/TikzObject.cs/#L31">View Source</a>
+    <a href="https://github.com/TimeTravelPenguin/TikzGraph/blob/dev/TikzAutonoma/TikzObjects/TikzObject.cs/#L58">View Source</a>
   </span>
   <a id="TikzAutonoma_TikzObjects_TikzObject_Compile_" data-uid="TikzAutonoma.TikzObjects.TikzObject.Compile*"></a>
   <h4 id="TikzAutonoma_TikzObjects_TikzObject_Compile_TikzAutonoma_ITikzWriter_" data-uid="TikzAutonoma.TikzObjects.TikzObject.Compile(TikzAutonoma.ITikzWriter)">Compile(ITikzWriter)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Compiles the object to a Tikz format</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -367,7 +376,8 @@
       <tr>
         <td><a class="xref" href="TikzAutonoma.ITikzWriter.html">ITikzWriter</a></td>
         <td><span class="parametername">writer</span></td>
-        <td></td>
+        <td><p>The writer used to compile this object</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -382,7 +392,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td></td>
+        <td><p>Returns the current node as a string in Tikz format</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -404,7 +415,7 @@
                     <a href="https://github.com/TimeTravelPenguin/TikzAutonoma/new/dev/apiSpec/new?filename=TikzAutonoma_TikzObjects_TikzObject.md&amp;value=---%0Auid%3A%20TikzAutonoma.TikzObjects.TikzObject%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/TimeTravelPenguin/TikzGraph/blob/dev/TikzAutonoma/TikzObjects/TikzObject.cs/#L23" class="contribution-link">View Source</a>
+                    <a href="https://github.com/TimeTravelPenguin/TikzGraph/blob/dev/TikzAutonoma/TikzObjects/TikzObject.cs/#L26" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

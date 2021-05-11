@@ -83,7 +83,8 @@
   
   <h1 id="TikzAutonoma_TikzObjects_TikzNode" data-uid="TikzAutonoma.TikzObjects.TikzNode" class="text-break">Class TikzNode
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>A node object for a Tikz figure</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -149,11 +150,12 @@
     <a href="https://github.com/TimeTravelPenguin/TikzAutonoma/new/dev/apiSpec/new?filename=TikzAutonoma_TikzObjects_TikzNode__ctor_System_String_System_String_TikzAutonoma_TextMode_System_Double_System_Double_System_Boolean_.md&amp;value=---%0Auid%3A%20TikzAutonoma.TikzObjects.TikzNode.%23ctor(System.String%2CSystem.String%2CTikzAutonoma.TextMode%2CSystem.Double%2CSystem.Double%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TimeTravelPenguin/TikzGraph/blob/dev/TikzAutonoma/TikzObjects/TikzNode.cs/#L32">View Source</a>
+    <a href="https://github.com/TimeTravelPenguin/TikzGraph/blob/dev/TikzAutonoma/TikzObjects/TikzNode.cs/#L56">View Source</a>
   </span>
   <a id="TikzAutonoma_TikzObjects_TikzNode__ctor_" data-uid="TikzAutonoma.TikzObjects.TikzNode.#ctor*"></a>
   <h4 id="TikzAutonoma_TikzObjects_TikzNode__ctor_System_String_System_String_TikzAutonoma_TextMode_System_Double_System_Double_System_Boolean_" data-uid="TikzAutonoma.TikzObjects.TikzNode.#ctor(System.String,System.String,TikzAutonoma.TextMode,System.Double,System.Double,System.Boolean)">TikzNode(String, String, TextMode, Double, Double, Boolean)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Constructs a new node</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -172,32 +174,39 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">name</span></td>
-        <td></td>
+        <td><p>The name used to reference this node in the Tikz figure</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">label</span></td>
-        <td></td>
+        <td><p>The text present shown within this node</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="TikzAutonoma.TextMode.html">TextMode</a></td>
         <td><span class="parametername">textMode</span></td>
-        <td></td>
+        <td><p>Indicates whether or not to enclose the compiled label in $ $</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Double</span></td>
         <td><span class="parametername">xShift</span></td>
-        <td></td>
+        <td><p>Shift the label text along the x-axis</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Double</span></td>
         <td><span class="parametername">yShift</span></td>
-        <td></td>
+        <td><p>Shift the label text along the y-axis</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">isInitialNode</span></td>
-        <td></td>
+        <td><p>Indicates that this node is an initial node in figure and adds an arrow
+to indicate the figure entry point</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -208,11 +217,13 @@
     <a href="https://github.com/TimeTravelPenguin/TikzAutonoma/new/dev/apiSpec/new?filename=TikzAutonoma_TikzObjects_TikzNode_IsInitialNode.md&amp;value=---%0Auid%3A%20TikzAutonoma.TikzObjects.TikzNode.IsInitialNode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TimeTravelPenguin/TikzGraph/blob/dev/TikzAutonoma/TikzObjects/TikzNode.cs/#L25">View Source</a>
+    <a href="https://github.com/TimeTravelPenguin/TikzGraph/blob/dev/TikzAutonoma/TikzObjects/TikzNode.cs/#L32">View Source</a>
   </span>
   <a id="TikzAutonoma_TikzObjects_TikzNode_IsInitialNode_" data-uid="TikzAutonoma.TikzObjects.TikzNode.IsInitialNode*"></a>
   <h4 id="TikzAutonoma_TikzObjects_TikzNode_IsInitialNode" data-uid="TikzAutonoma.TikzObjects.TikzNode.IsInitialNode">IsInitialNode</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Indicates that this node is an initial node in figure and adds an arrow
+to indicate the figure entry point</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -240,11 +251,12 @@
     <a href="https://github.com/TimeTravelPenguin/TikzAutonoma/new/dev/apiSpec/new?filename=TikzAutonoma_TikzObjects_TikzNode_Compile_TikzAutonoma_ITikzWriter_.md&amp;value=---%0Auid%3A%20TikzAutonoma.TikzObjects.TikzNode.Compile(TikzAutonoma.ITikzWriter)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TimeTravelPenguin/TikzGraph/blob/dev/TikzAutonoma/TikzObjects/TikzNode.cs/#L27">View Source</a>
+    <a href="https://github.com/TimeTravelPenguin/TikzGraph/blob/dev/TikzAutonoma/TikzObjects/TikzNode.cs/#L39">View Source</a>
   </span>
   <a id="TikzAutonoma_TikzObjects_TikzNode_Compile_" data-uid="TikzAutonoma.TikzObjects.TikzNode.Compile*"></a>
   <h4 id="TikzAutonoma_TikzObjects_TikzNode_Compile_TikzAutonoma_ITikzWriter_" data-uid="TikzAutonoma.TikzObjects.TikzNode.Compile(TikzAutonoma.ITikzWriter)">Compile(ITikzWriter)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Compiles the node to a Tikz format</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -263,7 +275,8 @@
       <tr>
         <td><a class="xref" href="TikzAutonoma.ITikzWriter.html">ITikzWriter</a></td>
         <td><span class="parametername">writer</span></td>
-        <td></td>
+        <td><p>The writer used to compile this object</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -278,7 +291,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td></td>
+        <td><p>Returns the current node as a string in Tikz format</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -305,7 +319,7 @@
                     <a href="https://github.com/TimeTravelPenguin/TikzAutonoma/new/dev/apiSpec/new?filename=TikzAutonoma_TikzObjects_TikzNode.md&amp;value=---%0Auid%3A%20TikzAutonoma.TikzObjects.TikzNode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/TimeTravelPenguin/TikzGraph/blob/dev/TikzAutonoma/TikzObjects/TikzNode.cs/#L23" class="contribution-link">View Source</a>
+                    <a href="https://github.com/TimeTravelPenguin/TikzGraph/blob/dev/TikzAutonoma/TikzObjects/TikzNode.cs/#L26" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

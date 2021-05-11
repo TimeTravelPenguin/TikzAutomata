@@ -1,0 +1,205 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Introduction | TikzAutonoma </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Introduction | TikzAutonoma ">
+    <meta name="generator" content="docfx 2.57.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../assets/images/Favicon.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="introduction">Introduction</h1>
+
+<h2 id="building-a-simple-figure">Building a simple figure</h2>
+<p>In this tutorial, we will aim to build a very small and simple neural network-like figure.
+Observe the final result:</p>
+<img src="../assets/images/simple_nn.png" style="max-height: 400px;" class="image_center" alt="Sample neural network">
+<p>There are three objects we will use to construct the above image: <code>Node</code>, <code>Edge</code>, and <code>Figure</code>.</p>
+<h2 id="nodes">Nodes</h2>
+<p>The <a class="xref" href="../api/TikzAutonoma.TikzObjects.TikzNode.html">TikzNode</a> object allows us to encapsulate our node data and reuse it with ease.
+We need to make four nodes, each with their own names and labels. The name corresponds to the property PGF uses to render the Tikz figure. The label is the contents of the node. We can compare the C# object and LaTeX code with this example:</p>
+<ul>
+<li>C#:</li>
+</ul>
+<pre><code class="lang-cs">var myNode = new TikzNode(&quot;nodeName&quot;, &quot;node label&quot;);
+</code></pre>
+<ul>
+<li>LaTeX:</li>
+</ul>
+<pre><code class="lang-latex">\node[state] (nodeName) {$node label$};
+</code></pre>
+<p>We can, of course, remove the <code>$</code> from the node label, rendering it as plain text rather than a math environment with an extra parameter in our node constructor:</p>
+<pre><code class="lang-cs">var myNode = new TikzNode(&quot;nodeName&quot;, &quot;node label&quot;, textMode: TextMode.PlainText);
+</code></pre>
+<p>Here, the <code>textMode</code> optional parameter <a class="xref" href="../api/TikzAutonoma.TextMode.html">TextMode</a>. We can now begin building our diagram. We will name each node based on their job role in the figure. The left-most input layer, from top to bottom, will be the bias, input 1, and input 2. We will simply call there <code>inputNodeB</code>, <code>inputNodeX1</code>, and <code>inputNodeX2</code>:</p>
+<pre><code class="lang-cs">var inputNodeB = new TikzNode(&quot;b&quot;, &quot;1&quot;);
+var inputNodeX1 = new TikzNode(&quot;x1&quot;, &quot;1.1&quot;);
+var inputNodeX2 = new TikzNode(&quot;x2&quot;, &quot;0.5&quot;);
+</code></pre>
+<p>The second layer has a node representing a node with an &quot;activation function&quot;. In LaTeX, we can write this fancy L with <code>\mathcal{L}</code>. The third layer, the output layer, also has a node with a label with an accent. This &quot;hat&quot; is given with: <code>\hat{y}</code>. Note that both of these nodes require the math environment, so we will not use plaintext here:</p>
+<pre><code class="lang-cs">var NodeL = new TikzNode(&quot;L&quot;, @&quot;\mathcal{L}&quot;);
+var NodeY = new TikzNode(&quot;y&quot;, @&quot;\hat{y}&quot;);
+</code></pre>
+<p>That is all for the nodes of this figure. Simple!</p>
+<h2 id="edges">Edges</h2>
+<p>The <a class="xref" href="../api/TikzAutonoma.TikzObjects.TikzEdge.html">TikzEdge</a> object is also very simple. Unlike nodes, edges have no name. There are still arguments we can give, however, which will affect the way our figure will be styled. Namely, the <code>xshift</code>, <code>yshift</code>, and <code>textDirection</code> arguments. For edges, these arguments shift the location of the text label!</p>
+<pre><code class="lang-cs">var edgeBL = new TikzEdge(&quot;1.05&quot;, yShift: 3);
+var edgeX1L = new TikzEdge(&quot;-0.15&quot;);
+var edgeX2L = new TikzEdge(&quot;0.8&quot;, textDirection: Direction.Below, yShift: -3);
+var edgeLY = new TikzEdge(&quot;0.984&quot;);
+</code></pre>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Currently, there is no implementation for loops from a node to itself. Nor is there edge bending. These are planned features.</p>
+</div>
+<p>In the example we are working on, the subtle style changes such as the shifting can easily be ignored and added into the final LaTeX generated code. However, for larger figures, where you may be constantly re-generating figures, it may be helpful to spent a little more time to just add the properties as you go.</p>
+<p>We are now half way there! All that is left is to add these objects to a figure and then build!</p>
+<h2 id="figure">Figure</h2>
+<p>Currently, you must provide a caption and a figure name for the <a class="xref" href="../api/TikzAutonoma.TikzObjects.TikzFigure.html">TikzFigure</a>.</p>
+<pre><code class="lang-cs">var figure = new TikzFigure(&quot;A simple neural network&quot;, &quot;simple_nn&quot;, inputNodeB);
+</code></pre>
+<p>Our final step is to hook up each edge to a source node and a target node:</p>
+<pre><code class="lang-cs">figure.AddNode(inputNodeX1, inputNodeB, Direction.Below);
+figure.AddNode(inputNodeX2, inputNodeX1, Direction.Below);
+
+figure.AddNode(NodeL, inputNodeX1, Direction.Right);
+figure.AddNode(NodeY, NodeL, Direction.Right);
+
+figure.AddEdge(edgeBL, inputNodeB, NodeL);
+figure.AddEdge(edgeX1L, inputNodeX1, NodeL);
+figure.AddEdge(edgeX2L, inputNodeX2, NodeL);
+figure.AddEdge(edgeLY, NodeL, NodeY);
+</code></pre>
+<p>That is it! We can now generate our figure:</p>
+<pre><code class="lang-cs">var tikz = figure.Build();
+Console.WriteLine(tikz);
+</code></pre>
+<p>The outputted result is given:</p>
+<pre><code class="lang-latex">\begin{figure}
+  \centering
+    \begin{tikzpicture}
+        \node[state] (b) {$1$};
+        \node[state, below of=b] (x1) {$1.1$};
+        \node[state, below of=x1] (x2) {$0.5$};
+        \node[state, right of=x1] (L) {$\mathcal{L}$};
+        \node[state, right of=L] (y) {$\hat{y}$};
+
+        \draw (b) edge[above] node[yshift=3mm] {$1.05$} (L)
+              (x1) edge[above] node[] {$-0.15$} (L)
+              (x2) edge[below] node[yshift=-3mm] {$0.8$} (L)
+              (L) edge[above] node[] {$0.984$} (y)
+        ;
+    \end{tikzpicture}
+  \caption{A simple neural network}
+  \label{fig:simple_nn}
+\end{figure}
+</code></pre>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/TimeTravelPenguin/TikzAutonoma/blob/dev/guides/intro.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Developed by Phillip Smith
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
