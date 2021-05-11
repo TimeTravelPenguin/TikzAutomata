@@ -2,15 +2,15 @@
 
 // Name: Phillip Smith
 // 
-// Solution: TikzGraph
+// Solution: TikzAutonoma
 // Project: TikzAutonoma
-// File Name: TikzExporter.cs
+// File Name: TikzWriter.cs
 // 
 // Current Data:
-// 2021-05-06 9:17 PM
+// 2021-05-11 5:17 PM
 // 
 // Creation Date:
-// 2021-05-04 5:32 PM
+// 2021-05-07 3:23 PM
 
 #endregion
 
@@ -24,8 +24,16 @@ using TikzAutonoma.TikzObjects;
 
 namespace TikzAutonoma
 {
-  internal class TikzExporter : ITikzWriter
+  /// <summary>
+  ///   Writer object used to compile objects to Tikz format
+  /// </summary>
+  public class TikzWriter : ITikzWriter
   {
+    /// <summary>
+    ///   Compiles a node to Tikz format
+    /// </summary>
+    /// <param name="node">The node to compile</param>
+    /// <returns>Returns the current node as a string in Tikz format</returns>
     public string CompileNode(ITikzNode node)
     {
       if (node is null)
@@ -45,6 +53,11 @@ namespace TikzAutonoma
       return @$"\node[{string.Join(", ", nodeArgs)}[0]] ({node.Name}){label};";
     }
 
+    /// <summary>
+    ///   Compiles a edge to Tikz format
+    /// </summary>
+    /// <param name="edge">The edge to compile</param>
+    /// <returns>Returns the current edge as a string in Tikz format</returns>
     public string CompileEdge(ITikzEdge edge)
     {
       if (edge is null)
@@ -70,6 +83,11 @@ namespace TikzAutonoma
       return @$"([0]) edge[{string.Join(", ", edgeArgs)}]{node}{label} ([1])";
     }
 
+    /// <summary>
+    ///   Compiles node definitions in an associative format for Tikz figures
+    /// </summary>
+    /// <param name="nodeAssociation">The association between two nodes</param>
+    /// <returns>Returns the current node association in Tikz format</returns>
     public string FormatNodeAssociation(NodeAssociation nodeAssociation)
     {
       var source = nodeAssociation.SourceNode;
@@ -84,6 +102,11 @@ namespace TikzAutonoma
       return compiled.Replace("[0]", directionArg);
     }
 
+    /// <summary>
+    ///   Compiles edge definitions in an associative format for Tikz figures
+    /// </summary>
+    /// <param name="edgeAssociation">The association between two nodes</param>
+    /// <returns>Returns the current edge association in Tikz format</returns>
     public string FormatEdgeAssociation(EdgeAssociation edgeAssociation)
     {
       var source = edgeAssociation.SourceNode;

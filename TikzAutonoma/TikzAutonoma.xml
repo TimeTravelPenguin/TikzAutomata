@@ -4,6 +4,51 @@
         <name>TikzAutonoma</name>
     </assembly>
     <members>
+        <member name="T:TikzAutonoma.ITikzWritable">
+            <summary>
+              Interface for objects compilable for Tikz
+            </summary>
+        </member>
+        <member name="M:TikzAutonoma.ITikzWritable.Compile(TikzAutonoma.ITikzWriter)">
+            <summary>
+              Compiles the object to a Tikz format
+            </summary>
+            <param name="writer">The writer used to compile this object</param>
+            <returns>Returns the current object as a string in Tikz format</returns>
+        </member>
+        <member name="T:TikzAutonoma.ITikzWriter">
+            <summary>
+              Interface for object able to compile <see cref="T:TikzAutonoma.ITikzWritable" /> objects
+            </summary>
+        </member>
+        <member name="M:TikzAutonoma.ITikzWriter.CompileNode(TikzAutonoma.TikzObjects.ITikzNode)">
+            <summary>
+              Compiles a node to Tikz format
+            </summary>
+            <param name="node">The node to compile</param>
+            <returns>Returns the current node as a string in Tikz format</returns>
+        </member>
+        <member name="M:TikzAutonoma.ITikzWriter.CompileEdge(TikzAutonoma.TikzObjects.ITikzEdge)">
+            <summary>
+              Compiles a edge to Tikz format
+            </summary>
+            <param name="edge">The edge to compile</param>
+            <returns>Returns the current edge as a string in Tikz format</returns>
+        </member>
+        <member name="M:TikzAutonoma.ITikzWriter.FormatNodeAssociation(TikzAutonoma.TikzObjects.NodeAssociation)">
+            <summary>
+              Compiles node definitions in an associative format for Tikz figures
+            </summary>
+            <param name="nodeAssociation">The association between two nodes</param>
+            <returns>Returns the current node association in Tikz format</returns>
+        </member>
+        <member name="M:TikzAutonoma.ITikzWriter.FormatEdgeAssociation(TikzAutonoma.TikzObjects.EdgeAssociation)">
+            <summary>
+              Compiles edge definitions in an associative format for Tikz figures
+            </summary>
+            <param name="edgeAssociation">The association between two nodes</param>
+            <returns>Returns the current edge association in Tikz format</returns>
+        </member>
         <member name="T:TikzAutonoma.Properties.Resources">
             <summary>
               A strongly-typed resource class, for looking up localized strings, etc.
@@ -32,13 +77,303 @@
             \end{figure}.
              </summary>
         </member>
+        <member name="T:TikzAutonoma.TextMode">
+            <summary>
+              Enum to indicate whether labels should be rendered as plain text or as a meth environment
+            </summary>
+        </member>
+        <member name="F:TikzAutonoma.TextMode.PlainText">
+            <summary>
+              Indicates plain text
+            </summary>
+        </member>
+        <member name="F:TikzAutonoma.TextMode.MathText">
+            <summary>
+              Indicates a math environment
+            </summary>
+        </member>
+        <member name="T:TikzAutonoma.TikzObjects.EdgeAssociation">
+            <summary>
+              A record object used to associate an edge to a pair of nodes
+            </summary>
+        </member>
+        <member name="P:TikzAutonoma.TikzObjects.EdgeAssociation.Edge">
+            <summary>
+              The edge object of the node-edge-node association
+            </summary>
+        </member>
+        <member name="P:TikzAutonoma.TikzObjects.EdgeAssociation.SourceNode">
+            <summary>
+              The source node of the node-edge-node association
+            </summary>
+        </member>
+        <member name="P:TikzAutonoma.TikzObjects.EdgeAssociation.TargetNode">
+            <summary>
+              The target node of the node-edge-node association
+            </summary>
+        </member>
+        <member name="M:TikzAutonoma.TikzObjects.EdgeAssociation.#ctor(TikzAutonoma.TikzObjects.ITikzEdge,TikzAutonoma.TikzObjects.ITikzNode,TikzAutonoma.TikzObjects.ITikzNode)">
+            <summary>
+              Constructs a new node-edge-node association
+            </summary>
+            <param name="edge">The edge object of the association</param>
+            <param name="sourceNode">The source node of the association</param>
+            <param name="targetNode">The target node of the association</param>
+        </member>
+        <member name="T:TikzAutonoma.TikzObjects.ITikzEdge">
+            <summary>
+              Interface encapsulating the Tikz Edge objects
+            </summary>
+        </member>
+        <member name="T:TikzAutonoma.TikzObjects.ITikzNode">
+            <summary>
+              Interface encapsulating the Tikz Node objects
+            </summary>
+        </member>
+        <member name="T:TikzAutonoma.TikzObjects.ITikzObject">
+            <summary>
+              Interface encapsulating Tikz objects
+            </summary>
+        </member>
+        <member name="P:TikzAutonoma.TikzObjects.ITikzObject.Name">
+            <summary>
+              The name used to reference this node in the Tikz figure
+            </summary>
+        </member>
+        <member name="P:TikzAutonoma.TikzObjects.ITikzObject.Label">
+            <summary>
+              The text present shown within this object
+            </summary>
+        </member>
+        <member name="P:TikzAutonoma.TikzObjects.ITikzObject.TextMode">
+            <summary>
+              Indicates whether or not to enclose the compiled label in $ $
+            </summary>
+        </member>
+        <member name="P:TikzAutonoma.TikzObjects.ITikzObject.XShift">
+            <summary>
+              Shift the label text along the x-axis
+            </summary>
+        </member>
+        <member name="P:TikzAutonoma.TikzObjects.ITikzObject.YShift">
+            <summary>
+              Shift the label text along the y-axis
+            </summary>
+        </member>
+        <member name="T:TikzAutonoma.TikzObjects.NodeAssociation">
+            <summary>
+              A record object used to associate a pair of adjacent edges.
+            </summary>
+        </member>
+        <member name="P:TikzAutonoma.TikzObjects.NodeAssociation.SourceNode">
+            <summary>
+              The source node of the association
+            </summary>
+        </member>
+        <member name="P:TikzAutonoma.TikzObjects.NodeAssociation.TargetNode">
+            <summary>
+              The target node of the association
+            </summary>
+        </member>
+        <member name="P:TikzAutonoma.TikzObjects.NodeAssociation.AssociationDirection">
+            <summary>
+              The direction of <see cref="P:TikzAutonoma.TikzObjects.NodeAssociation.TargetNode" /> relative to <see cref="P:TikzAutonoma.TikzObjects.NodeAssociation.SourceNode" />.
+            </summary>
+        </member>
+        <member name="M:TikzAutonoma.TikzObjects.NodeAssociation.#ctor(TikzAutonoma.TikzObjects.ITikzNode,TikzAutonoma.TikzObjects.ITikzNode,TikzAutonoma.Direction)">
+            <summary>
+              Constructs a new node-node association
+            </summary>
+            <param name="sourceNode">The source node of the association</param>
+            <param name="targetNode">The target node of the association</param>
+            <param name="associationDirection">
+              The direction in which <paramref name="targetNode" />
+              is to <paramref name="sourceNode" />
+            </param>
+        </member>
+        <member name="T:TikzAutonoma.TikzObjects.TikzEdge">
+            <summary>
+              An edge object for a Tikz figure
+            </summary>
+        </member>
+        <member name="P:TikzAutonoma.TikzObjects.TikzEdge.TextDirection">
+            <summary>
+              The location of the text relative to direction of the edge
+            </summary>
+        </member>
+        <member name="M:TikzAutonoma.TikzObjects.TikzEdge.Compile(TikzAutonoma.ITikzWriter)">
+            <summary>
+              Compiles the edge to a Tikz format
+            </summary>
+            <param name="writer">The writer used to compile this object</param>
+            <returns>Returns the current edge as a string in Tikz format</returns>
+        </member>
+        <member name="M:TikzAutonoma.TikzObjects.TikzEdge.#ctor(System.String,TikzAutonoma.TextMode,TikzAutonoma.Direction,System.Double,System.Double)">
+            <summary>
+              Constructs a new Edge
+            </summary>
+            <param name="label">The text shown along the edge</param>
+            <param name="textMode">Indicates whether or not to enclose the compiled label in $ $</param>
+            <param name="textDirection">The location of the text relative to direction of the edge</param>
+            <param name="xShift">Shift the label text along the x-axis</param>
+            <param name="yShift">Shift the label text along the y-axis</param>
+        </member>
+        <member name="T:TikzAutonoma.TikzObjects.TikzFigure">
+            <summary>
+              The object encapsulating a TikzFigure
+            </summary>
+        </member>
+        <member name="P:TikzAutonoma.TikzObjects.TikzFigure.Caption">
+            <summary>
+              LaTeX figure caption text
+            </summary>
+        </member>
+        <member name="P:TikzAutonoma.TikzObjects.TikzFigure.Label">
+            <summary>
+              LaTeX figure label/name
+            </summary>
+        </member>
+        <member name="M:TikzAutonoma.TikzObjects.TikzFigure.#ctor(System.String,System.String,TikzAutonoma.TikzObjects.ITikzNode)">
+            <summary>
+              Constructs a new Tikz figure
+            </summary>
+            <param name="caption">LaTeX figure caption text</param>
+            <param name="label">LaTeX figure label/name</param>
+            <param name="rootNode">The initial node used in the figure</param>
+        </member>
+        <member name="M:TikzAutonoma.TikzObjects.TikzFigure.AddEdge(TikzAutonoma.TikzObjects.ITikzEdge,TikzAutonoma.TikzObjects.ITikzNode,TikzAutonoma.TikzObjects.ITikzNode)">
+            <summary>
+              Adds a new edge associated with a source and target node
+            </summary>
+            <param name="edge">The edge object</param>
+            <param name="source">The source node</param>
+            <param name="target">The target node</param>
+        </member>
+        <member name="M:TikzAutonoma.TikzObjects.TikzFigure.AddNode(TikzAutonoma.TikzObjects.ITikzNode,TikzAutonoma.TikzObjects.ITikzNode,TikzAutonoma.Direction)">
+            <summary>
+              Adds a new node association with another node
+            </summary>
+            <param name="source">The source node</param>
+            <param name="target">The target node</param>
+            <param name="direction">The direction of <paramref name="target" /> relative to <paramref name="source" /></param>
+        </member>
+        <member name="M:TikzAutonoma.TikzObjects.TikzFigure.Build">
+            <summary>
+              Compiles the figure to a Tikz format
+            </summary>
+            <returns>Returns the current figure as a string in Tikz format</returns>
+        </member>
+        <member name="T:TikzAutonoma.TikzObjects.TikzNode">
+            <summary>
+              A node object for a Tikz figure
+            </summary>
+        </member>
+        <member name="P:TikzAutonoma.TikzObjects.TikzNode.IsInitialNode">
+            <summary>
+              Indicates that this node is an initial node in figure and adds an arrow
+              to indicate the figure entry point
+            </summary>
+        </member>
+        <member name="M:TikzAutonoma.TikzObjects.TikzNode.Compile(TikzAutonoma.ITikzWriter)">
+            <summary>
+              Compiles the node to a Tikz format
+            </summary>
+            <param name="writer">The writer used to compile this object</param>
+            <returns>Returns the current node as a string in Tikz format</returns>
+        </member>
+        <member name="M:TikzAutonoma.TikzObjects.TikzNode.#ctor(System.String,System.String,TikzAutonoma.TextMode,System.Double,System.Double,System.Boolean)">
+            <summary>
+              Constructs a new node
+            </summary>
+            <param name="name">The name used to reference this node in the Tikz figure</param>
+            <param name="label">The text present shown within this node</param>
+            <param name="textMode">Indicates whether or not to enclose the compiled label in $ $</param>
+            <param name="xShift">Shift the label text along the x-axis</param>
+            <param name="yShift">Shift the label text along the y-axis</param>
+            <param name="isInitialNode">
+              Indicates that this node is an initial node in figure and adds an arrow
+              to indicate the figure entry point
+            </param>
+        </member>
+        <member name="T:TikzAutonoma.TikzObjects.TikzObject">
+            <summary>
+              Base class used for all Tikz objects
+            </summary>
+        </member>
+        <member name="P:TikzAutonoma.TikzObjects.TikzObject.Label">
+            <summary>
+              The text present shown within this object
+            </summary>
+        </member>
+        <member name="P:TikzAutonoma.TikzObjects.TikzObject.Name">
+            <summary>
+              The name used to reference this node in the Tikz figure
+            </summary>
+        </member>
+        <member name="P:TikzAutonoma.TikzObjects.TikzObject.TextMode">
+            <summary>
+              Indicates whether or not to enclose the compiled label in $ $
+            </summary>
+        </member>
+        <member name="P:TikzAutonoma.TikzObjects.TikzObject.XShift">
+            <summary>
+              Shift the label text along the x-axis
+            </summary>
+        </member>
+        <member name="P:TikzAutonoma.TikzObjects.TikzObject.YShift">
+            <summary>
+              Shift the label text along the y-axis
+            </summary>
+        </member>
+        <member name="M:TikzAutonoma.TikzObjects.TikzObject.Compile(TikzAutonoma.ITikzWriter)">
+            <summary>
+              Compiles the object to a Tikz format
+            </summary>
+            <param name="writer">The writer used to compile this object</param>
+            <returns>Returns the current node as a string in Tikz format</returns>
+        </member>
         <member name="M:TikzAutonoma.TikzObjects.TikzObject.#ctor(System.String,System.String,TikzAutonoma.TextMode,System.Double,System.Double)">
             <summary>
-              A wrapper object used for making TikzFigure objects
+              Base constructor used for making new Tikz objects
             </summary>
-            <param name="label">The text shown by the object</param>
-            <param name="name">The name of the object in the TikzFigure code</param>
-            <param name="textMode">Whether or not to wrap text in $$ to indicate math mode</param>
+            <param name="name">The name used to reference this node in the Tikz figure</param>
+            <param name="label">The text present shown within this object</param>
+            <param name="textMode">Indicates whether or not to enclose the compiled label in $ $</param>
+            <param name="xShift">Shift the label text along the x-axis</param>
+            <param name="yShift">Shift the label text along the y-axis</param>
+        </member>
+        <member name="T:TikzAutonoma.TikzWriter">
+            <summary>
+              Writer object used to compile objects to Tikz format
+            </summary>
+        </member>
+        <member name="M:TikzAutonoma.TikzWriter.CompileNode(TikzAutonoma.TikzObjects.ITikzNode)">
+            <summary>
+              Compiles a node to Tikz format
+            </summary>
+            <param name="node">The node to compile</param>
+            <returns>Returns the current node as a string in Tikz format</returns>
+        </member>
+        <member name="M:TikzAutonoma.TikzWriter.CompileEdge(TikzAutonoma.TikzObjects.ITikzEdge)">
+            <summary>
+              Compiles a edge to Tikz format
+            </summary>
+            <param name="edge">The edge to compile</param>
+            <returns>Returns the current edge as a string in Tikz format</returns>
+        </member>
+        <member name="M:TikzAutonoma.TikzWriter.FormatNodeAssociation(TikzAutonoma.TikzObjects.NodeAssociation)">
+            <summary>
+              Compiles node definitions in an associative format for Tikz figures
+            </summary>
+            <param name="nodeAssociation">The association between two nodes</param>
+            <returns>Returns the current node association in Tikz format</returns>
+        </member>
+        <member name="M:TikzAutonoma.TikzWriter.FormatEdgeAssociation(TikzAutonoma.TikzObjects.EdgeAssociation)">
+            <summary>
+              Compiles edge definitions in an associative format for Tikz figures
+            </summary>
+            <param name="edgeAssociation">The association between two nodes</param>
+            <returns>Returns the current edge association in Tikz format</returns>
         </member>
     </members>
 </doc>

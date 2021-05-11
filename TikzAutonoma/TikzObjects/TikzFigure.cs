@@ -2,15 +2,15 @@
 
 // Name: Phillip Smith
 // 
-// Solution: TikzGraph
+// Solution: TikzAutonoma
 // Project: TikzAutonoma
 // File Name: TikzFigure.cs
 // 
 // Current Data:
-// 2021-05-06 9:17 PM
+// 2021-05-11 5:14 PM
 // 
 // Creation Date:
-// 2021-05-04 5:34 PM
+// 2021-05-07 3:23 PM
 
 #endregion
 
@@ -25,14 +25,31 @@ using TikzAutonoma.Properties;
 
 namespace TikzAutonoma.TikzObjects
 {
+  /// <summary>
+  ///   The object encapsulating a TikzFigure
+  /// </summary>
   public class TikzFigure
   {
-    private static readonly ITikzWriter TikzWriter = new TikzExporter();
+    private static readonly ITikzWriter TikzWriter = new TikzWriter();
     private readonly IList<EdgeAssociation> _edgeAssociations = new List<EdgeAssociation>();
     private readonly IList<NodeAssociation> _nodeAssociations = new List<NodeAssociation>();
+
+    /// <summary>
+    ///   LaTeX figure caption text
+    /// </summary>
     public string Caption { get; set; }
+
+    /// <summary>
+    ///   LaTeX figure label/name
+    /// </summary>
     public string Label { get; set; }
 
+    /// <summary>
+    ///   Constructs a new Tikz figure
+    /// </summary>
+    /// <param name="caption">LaTeX figure caption text</param>
+    /// <param name="label">LaTeX figure label/name</param>
+    /// <param name="rootNode">The initial node used in the figure</param>
     public TikzFigure(string caption, string label, ITikzNode rootNode)
     {
       Caption = caption;
@@ -41,16 +58,32 @@ namespace TikzAutonoma.TikzObjects
       _nodeAssociations.Add(new NodeAssociation(rootNode, rootNode, Direction.None));
     }
 
+    /// <summary>
+    ///   Adds a new edge associated with a source and target node
+    /// </summary>
+    /// <param name="edge">The edge object</param>
+    /// <param name="source">The source node</param>
+    /// <param name="target">The target node</param>
     public void AddEdge(ITikzEdge edge, ITikzNode source, ITikzNode target)
     {
       _edgeAssociations.Add(new EdgeAssociation(edge, source, target));
     }
 
+    /// <summary>
+    ///   Adds a new node association with another node
+    /// </summary>
+    /// <param name="source">The source node</param>
+    /// <param name="target">The target node</param>
+    /// <param name="direction">The direction of <paramref name="target" /> relative to <paramref name="source" /></param>
     public void AddNode(ITikzNode source, ITikzNode target, Direction direction)
     {
       _nodeAssociations.Add(new NodeAssociation(source, target, direction));
     }
 
+    /// <summary>
+    ///   Compiles the figure to a Tikz format
+    /// </summary>
+    /// <returns>Returns the current figure as a string in Tikz format</returns>
     public string Build()
     {
       var sb = new StringBuilder();
