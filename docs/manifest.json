@@ -18,7 +18,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TikzAutonoma.Direction.html",
-          "hash": "jNM13eDbOKr8Iis7VFh5tA=="
+          "hash": "VDFYBN9b4Ykx2tO91V3Y4inSNcf6HzD+FIcj1J75qSc="
         }
       },
       "is_incremental": false,
@@ -30,7 +30,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TikzAutonoma.EdgeArrow.html",
-          "hash": "+8ElAculKhS0aPqVHzS9qQ=="
+          "hash": "iiJBh1qm5NykQDXG0wcs1qAtQxsGUmgkj5zn6rg7RkM="
         }
       },
       "is_incremental": false,
@@ -42,7 +42,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TikzAutonoma.ITikzWritable.html",
-          "hash": "ufnanLm8mSs6RAzljgGrRA=="
+          "hash": "10MnfH8kCmZGkADyxJv8PDgQ+f6CIYRw+pmH3u/MTs4="
         }
       },
       "is_incremental": false,
@@ -54,7 +54,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TikzAutonoma.ITikzWriter.html",
-          "hash": "FrRAmkFmVu0UtxjMSgLIEQ=="
+          "hash": "bLv1SQpMELD1ADAb6aZ4Vxch2BHbXDcwt1Sj71R8Jtk="
         }
       },
       "is_incremental": false,
@@ -66,7 +66,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TikzAutonoma.TextMode.html",
-          "hash": "OFuOmrbpNxweZAEeerFWFQ=="
+          "hash": "BOp6gQxCc+mT6tYOwbJ8ANxUoMhsrDsbrAGAUPXu1os="
         }
       },
       "is_incremental": false,
@@ -78,7 +78,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TikzAutonoma.TikzObjects.ITikzEdge.html",
-          "hash": "2/i4cZKU+49abneI8Qb3cA=="
+          "hash": "CitP+9LD+dXKNHqd3s1ROIn7I9v+DuBxVrGTv2JuFqE="
         }
       },
       "is_incremental": false,
@@ -90,7 +90,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TikzAutonoma.TikzObjects.ITikzNode.html",
-          "hash": "8hRAIgutPAg7/nQlLTnD4w=="
+          "hash": "Tuwyi/SJtQVZ2YbAim4aVIzN1maj09X4pTSWJFubn64="
         }
       },
       "is_incremental": false,
@@ -102,7 +102,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TikzAutonoma.TikzObjects.ITikzObject.html",
-          "hash": "lkyDsflOXg+ElLDxZfBBWg=="
+          "hash": "s7aB1JQFfYz2/I/TfvhDI0WoyIRflOgMJCXwT9GVYDA="
         }
       },
       "is_incremental": false,
@@ -114,7 +114,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TikzAutonoma.TikzObjects.TikzEdge.html",
-          "hash": "nGSUW+WQ48qM/r+qwXxsrg=="
+          "hash": "s9DTxk47OKdjEQ674aFbl8OI853CZM49ebK3peI5KJI="
         }
       },
       "is_incremental": false,
@@ -126,7 +126,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TikzAutonoma.TikzObjects.TikzFigure.html",
-          "hash": "DSvRrVkKUNAfhQEHi/KiYA=="
+          "hash": "Mcj+bw37SNJxrsz31HXdQKGCk4KgGZ/vM4X4kC2wbQA="
         }
       },
       "is_incremental": false,
@@ -138,7 +138,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TikzAutonoma.TikzObjects.TikzNode.html",
-          "hash": "EXFgYeRQEAR0P1Do58YBVA=="
+          "hash": "aydCegJ0WtubTavLXyEDJg7qZqfBIyAlAiO+QQck/Ws="
         }
       },
       "is_incremental": false,
@@ -150,7 +150,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TikzAutonoma.TikzObjects.TikzObject.html",
-          "hash": "f08Z6+LtoVye6VBeS2FsJA=="
+          "hash": "9K7KHcUP7xhTmMR7IrR6C9es8rX84KFbwdZW5iX/hbE="
         }
       },
       "is_incremental": false,
@@ -162,7 +162,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TikzAutonoma.TikzObjects.html",
-          "hash": "ZIStexttgMEes2GtRVrZ6g=="
+          "hash": "4y81jIOWaTD0TTqToRA2aZxjqIMZ71RbeYj5mWtt+Ag="
         }
       },
       "is_incremental": false,
@@ -174,31 +174,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TikzAutonoma.html",
-          "hash": "s9N0shHc9NUqPloBm70ZVw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TikzAutonomaDemos.Program.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TikzAutonomaDemos.Program.html",
-          "hash": "k50FRT8443KRTR4aCDibqg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TikzAutonomaDemos.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TikzAutonomaDemos.html",
-          "hash": "p5eFrT860HR7wcbWKX66Rg=="
+          "hash": "WtGc3Uic9Y9a4vuky2Td4vlGMyGnb7Fy46v+qKgQK+k="
         }
       },
       "is_incremental": false,
@@ -210,7 +186,7 @@
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "QxMbEbO+8djKmEeBcxl+IQ=="
+          "hash": "NcMIINsd3vap8i4hpDH8Qcx5WMGyRNcppBINyNGXnlk="
         }
       },
       "is_incremental": false,
@@ -222,7 +198,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "yzFCk7zDKtz68i3Viv46kQ=="
+          "hash": "iuoQsE4TNJk23rO+o8jKX7DrxmZwiWAfH7ymNO+rOng="
         }
       },
       "is_incremental": false,
@@ -234,7 +210,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/intro.html",
-          "hash": "bPDPfcSbQ2T76vhOr9a9Fw=="
+          "hash": "0V7RWZhj9gzJmYhwCkkRdRm02xVzJIHH3AZ8Attb0aM="
         }
       },
       "is_incremental": false,
@@ -246,7 +222,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/toc.html",
-          "hash": "gB8AESyvNru97tzIZofEEg=="
+          "hash": "BlPxk5mtl2kgfcZUgkEguqiSAR/EUyUTT4EdebwkQvs="
         }
       },
       "is_incremental": false,
@@ -276,6 +252,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "assets/images/Favicon_Big.png",
+      "output": {
+        "resource": {
+          "relative_path": "assets/images/Favicon_Big.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "assets/images/TikzAutonomaLogo.svg",
       "output": {
         "resource": {
@@ -291,7 +278,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "RvjKf/0GDFrZhLO/kMcwow=="
+          "hash": "+agiTmpK+eYUAk5yNzBEoBgtw8Bjcu3rEewGY9nRtXc="
         }
       },
       "is_incremental": false,
@@ -303,7 +290,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "+rHUkRZHZRi5gd1aTU6lJA=="
+          "hash": "WSuRrYiGwKKMbtdG9z8W9fXmLoCyTnGg9AxbPKLXm2Y="
         }
       },
       "is_incremental": false,
@@ -328,8 +315,8 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 16,
-          "skipped_file_count": 16
+          "total_file_count": 14,
+          "skipped_file_count": 14
         },
         "ResourceDocumentProcessor": {
           "can_incremental": false,

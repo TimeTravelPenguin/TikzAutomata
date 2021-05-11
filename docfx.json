@@ -3,7 +3,7 @@
     "src": [{
       "src": "../TikzAutonoma",
       "files": [
-        "**.csproj"
+        "TikzAutonoma/**.csproj"
       ]
     }],
     "dest": "api",
@@ -38,12 +38,11 @@
       "exclude": [
         "bin/**",
         "obj/**",
-        "docs/**"
+        "docs/**",
+        "TikzAutonomaDemos/**"
       ]
     }],
-    "xref": [
-      "y"
-    ],
+    "xref": [],
     "dest": "docs",
     "globalMetadata": {
       "_appTitle": "TikzAutonoma",
@@ -64,7 +63,7 @@
     "fileMetadataFiles": [],
     "template": [
       "default",
-      "templates/darkfx"
+      "templates/custom"
     ],
     "postProcessors": [],
     "markdownEngineName": "markdig",

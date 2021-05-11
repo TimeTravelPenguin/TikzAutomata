@@ -74,24 +74,14 @@
     "title": "Class TikzObject | TikzAutonoma",
     "keywords": "Class TikzObject Inheritance System.Object TikzObject TikzEdge TikzNode Implements ITikzWritable ITikzObject Inherited Members System.Object.Equals(System.Object) System.Object.Equals(System.Object, System.Object) System.Object.GetHashCode() System.Object.GetType() System.Object.MemberwiseClone() System.Object.ReferenceEquals(System.Object, System.Object) System.Object.ToString() Namespace : TikzAutonoma.TikzObjects Assembly : TikzAutonoma.dll Syntax public abstract class TikzObject : ITikzWritable, ITikzObject Constructors | Improve this Doc View Source TikzObject(String, String, TextMode, Double, Double) A wrapper object used for making TikzFigure objects Declaration protected TikzObject(string name, string label, TextMode textMode, double xShift, double yShift) Parameters Type Name Description System.String name The name of the object in the TikzFigure code System.String label The text shown by the object TextMode textMode Whether or not to wrap text in $$ to indicate math mode System.Double xShift System.Double yShift Properties | Improve this Doc View Source Label Declaration public string Label { get; set; } Property Value Type Description System.String | Improve this Doc View Source Name Declaration public string Name { get; set; } Property Value Type Description System.String | Improve this Doc View Source TextMode Declaration public TextMode TextMode { get; set; } Property Value Type Description TextMode | Improve this Doc View Source XShift Declaration public double XShift { get; set; } Property Value Type Description System.Double | Improve this Doc View Source YShift Declaration public double YShift { get; set; } Property Value Type Description System.Double Methods | Improve this Doc View Source Compile(ITikzWriter) Declaration public abstract string Compile(ITikzWriter writer) Parameters Type Name Description ITikzWriter writer Returns Type Description System.String Implements ITikzWritable ITikzObject"
   },
-  "api/TikzAutonomaDemos.html": {
-    "href": "api/TikzAutonomaDemos.html",
-    "title": "Namespace TikzAutonomaDemos | TikzAutonoma",
-    "keywords": "Namespace TikzAutonomaDemos Classes Program"
-  },
-  "api/TikzAutonomaDemos.Program.html": {
-    "href": "api/TikzAutonomaDemos.Program.html",
-    "title": "Class Program | TikzAutonoma",
-    "keywords": "Class Program Inheritance System.Object Program Inherited Members System.Object.Equals(System.Object) System.Object.Equals(System.Object, System.Object) System.Object.GetHashCode() System.Object.GetType() System.Object.MemberwiseClone() System.Object.ReferenceEquals(System.Object, System.Object) System.Object.ToString() Namespace : TikzAutonomaDemos Assembly : TikzAutonomaDemos.dll Syntax public static class Program Methods | Improve this Doc View Source Main() Declaration public static void Main()"
-  },
   "articles/intro.html": {
     "href": "articles/intro.html",
-    "title": "Add your introductions here! | TikzAutonoma",
-    "keywords": "Add your introductions here!"
+    "title": "Intro | TikzAutonoma",
+    "keywords": "Intro"
   },
   "index.html": {
     "href": "index.html",
-    "title": "This is the HOMEPAGE. | TikzAutonoma",
-    "keywords": "This is the HOMEPAGE . Refer to Markdown for how to write markdown files. Quick Start Notes: Add images to the images folder if the file is referencing an image."
+    "title": "Tikz Automata | TikzAutonoma",
+    "keywords": "Tikz Automata TikzAutomata is a C# library designed to assist in building Tikz figures. Large figures can become complex and prone to errors and typos, which may cause long delays in the development cycle of other work. Building your figures using this C# library provides you the ability to build using objects and prevent the issue of figure-breaking typos. Note TikzAutonoma is currently still in very early development. Please note that there is minimal functionality beyond basic plots, and currently still causes some occasional issues on figure generation. What is Tikz? \\usepackage{tikz} \\usetikzlibrary{automata, positioning, arrows} \\tikzset{% ->, >=stealth', node distance=2cm, .every state/.style={thick, fill=gray!10}, initial text=$ $, } \\begin{figure} \\centering \\begin{tikzpicture} \\node[state] (b) {$1$}; \\node[state, below of=b] (x1) {$1.1$}; \\node[state, below of=x1] (x2) {$0.5$}; \\node[state, right of=x1] (L) {$\\mathcal{L}$}; \\node[state, right of=L] (y) {$\\hat{y}$}; \\draw (b) edge[above] node[yshift=3mm] {$1.05$} (L) (x1) edge[above] node[] {$-0.15$} (L) (x2) edge[below] node[yshift=-3mm] {$0.8$} (L) (L) edge[above] node[] {$0.984$} (y) ; \\end{tikzpicture} \\caption{A simple neural network} \\label{fig:simple_nn} \\end{figure} var inputNodeB = new TikzNode(\"b\", \"1\"); var inputNodeX1 = new TikzNode(\"x1\", \"1.1\"); var inputNodeX2 = new TikzNode(\"x2\", \"0.5\"); var nodeL = new TikzNode(\"L\", @\"\\mathcal{L}\"); var nodeL = new TikzNode(\"y\", @\"\\hat{y}\"); var edgeBL = new TikzEdge(\"1.05\", yShift: 3); var edgeX1L = new TikzEdge(\"-0.15\"); var edgeX2L = new TikzEdge(\"0.8\", textDirection: Direction.Below, yShift: -3); var edgeLY = new TikzEdge(\"0.984\"); var figure = new TikzFigure(\"A simple neural network\", \"simple_nn\", inputNodeB); figure.AddNode(inputNodeX1, inputNodeB, Direction.Below); figure.AddNode(inputNodeX2, inputNodeX1, Direction.Below); figure.AddNode(nodeL, inputNodeX1, Direction.Right); figure.AddNode(nodeL, nodeL, Direction.Right); figure.AddEdge(edgeBL, inputNodeB, nodeL); figure.AddEdge(edgeX1L, inputNodeX1, nodeL); figure.AddEdge(edgeX2L, inputNodeX2, nodeL); figure.AddEdge(edgeLY, nodeL, nodeL); var tikz = figure.Build(); Console.WriteLine(tikz);"
   }
 }

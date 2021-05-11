@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>This is the HOMEPAGE. | TikzAutonoma </title>
+    <title>Tikz Automata | TikzAutonoma </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="This is the HOMEPAGE. | TikzAutonoma ">
-    <meta name="generator" content="docfx 2.56.6.0">
+    <meta name="title" content="Tikz Automata | TikzAutonoma ">
+    <meta name="generator" content="docfx 2.57.2.0">
     
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/docfx.vendor.css">
@@ -19,7 +19,8 @@
     
     <meta property="docfx:rel" content="">
     <meta property="docfx:newtab" content="true">
-  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -69,13 +70,77 @@
         <div class="article row grid">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="this-is-the-homepage">This is the <strong>HOMEPAGE</strong>.</h1>
+<h1 id="tikz-automata">Tikz Automata</h1>
 
-<p>Refer to <a href="http://daringfireball.net/projects/markdown/">Markdown</a> for how to write markdown files.</p>
-<h2 id="quick-start-notes">Quick Start Notes:</h2>
-<ol>
-<li>Add images to the <em>images</em> folder if the file is referencing an image.</li>
-</ol>
+<div class="feature_image">
+  <img src="assets/images/Favicon_Big.png">
+  TikzAutomata is a C# library designed to assist in building Tikz figures. Large figures can become complex and prone to errors and typos, which may cause long delays in the development cycle of other work.
+  Building your figures using this C# library provides you the ability to build using objects and prevent the issue of figure-breaking typos.
+</div>
+<div class="NOTE">
+<h5>Note</h5>
+<p>TikzAutonoma is currently still in very early development. Please note that there is minimal functionality beyond basic plots,
+and currently still causes some occasional issues on figure generation.</p>
+</div>
+<h2 id="what-is-tikz">What is Tikz?</h2>
+<pre><code class="lang-latex">\usepackage{tikz}
+\usetikzlibrary{automata, positioning, arrows}
+
+\tikzset{%
+    -&gt;,
+    &gt;=stealth',
+    node distance=2cm,
+    .every state/.style={thick, fill=gray!10},
+    initial text=$ $,
+}
+
+\begin{figure}
+  \centering
+    \begin{tikzpicture}
+        \node[state] (b) {$1$};
+        \node[state, below of=b] (x1) {$1.1$};
+        \node[state, below of=x1] (x2) {$0.5$};
+        \node[state, right of=x1] (L) {$\mathcal{L}$};
+        \node[state, right of=L] (y) {$\hat{y}$};
+
+        \draw (b) edge[above] node[yshift=3mm] {$1.05$} (L)
+              (x1) edge[above] node[] {$-0.15$} (L)
+              (x2) edge[below] node[yshift=-3mm] {$0.8$} (L)
+              (L) edge[above] node[] {$0.984$} (y)
+        ;
+    \end{tikzpicture}
+  \caption{A simple neural network}
+  \label{fig:simple_nn}
+\end{figure} 
+</code></pre>
+<pre><code class="lang-cs">var inputNodeB = new TikzNode(&quot;b&quot;, &quot;1&quot;);
+var inputNodeX1 = new TikzNode(&quot;x1&quot;, &quot;1.1&quot;);
+var inputNodeX2 = new TikzNode(&quot;x2&quot;, &quot;0.5&quot;);
+
+var nodeL = new TikzNode(&quot;L&quot;, @&quot;\mathcal{L}&quot;);
+var nodeL = new TikzNode(&quot;y&quot;, @&quot;\hat{y}&quot;);
+
+var edgeBL = new TikzEdge(&quot;1.05&quot;, yShift: 3);
+var edgeX1L = new TikzEdge(&quot;-0.15&quot;);
+var edgeX2L = new TikzEdge(&quot;0.8&quot;, textDirection: Direction.Below, yShift: -3);
+var edgeLY = new TikzEdge(&quot;0.984&quot;);
+
+var figure = new TikzFigure(&quot;A simple neural network&quot;, &quot;simple_nn&quot;, inputNodeB);
+
+figure.AddNode(inputNodeX1, inputNodeB, Direction.Below);
+figure.AddNode(inputNodeX2, inputNodeX1, Direction.Below);
+
+figure.AddNode(nodeL, inputNodeX1, Direction.Right);
+figure.AddNode(nodeL, nodeL, Direction.Right);
+
+figure.AddEdge(edgeBL, inputNodeB, nodeL);
+figure.AddEdge(edgeX1L, inputNodeX1, nodeL);
+figure.AddEdge(edgeX2L, inputNodeX2, nodeL);
+figure.AddEdge(edgeLY, nodeL, nodeL);
+
+var tikz = figure.Build();
+Console.WriteLine(tikz);
+</code></pre>
 </article>
           </div>
           
@@ -88,22 +153,9 @@
                   </li>
                 </ul>
               </div>
-              <div class="toggle-mode">
-                <div class="icon">
-                  <i aria-hidden="true">☀</i>
-                </div>
-                <label class="switch">
-                  <input type="checkbox" id="switch-style">
-                  <span class="slider round"></span>
-                </label>
-                <div class="icon">
-                  <i aria-hidden="true">☾</i>
-                </div>
-                <script type="text/javascript" src="styles/toggle-theme.js"></script>
-              </div>
-          
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                <h5>In This Article</h5>
+                <div></div>
               </nav>
             </div>
           </div>

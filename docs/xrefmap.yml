@@ -554,28 +554,3 @@ references:
   isSpec: "True"
   fullName: TikzAutonoma.TikzObjects.TikzObject.YShift
   nameWithType: TikzObject.YShift
-- uid: TikzAutonomaDemos
-  name: TikzAutonomaDemos
-  href: api/TikzAutonomaDemos.html
-  commentId: N:TikzAutonomaDemos
-  fullName: TikzAutonomaDemos
-  nameWithType: TikzAutonomaDemos
-- uid: TikzAutonomaDemos.Program
-  name: Program
-  href: api/TikzAutonomaDemos.Program.html
-  commentId: T:TikzAutonomaDemos.Program
-  fullName: TikzAutonomaDemos.Program
-  nameWithType: Program
-- uid: TikzAutonomaDemos.Program.Main
-  name: Main()
-  href: api/TikzAutonomaDemos.Program.html#TikzAutonomaDemos_Program_Main
-  commentId: M:TikzAutonomaDemos.Program.Main
-  fullName: TikzAutonomaDemos.Program.Main()
-  nameWithType: Program.Main()
-- uid: TikzAutonomaDemos.Program.Main*
-  name: Main
-  href: api/TikzAutonomaDemos.Program.html#TikzAutonomaDemos_Program_Main_
-  commentId: Overload:TikzAutonomaDemos.Program.Main
-  isSpec: "True"
-  fullName: TikzAutonomaDemos.Program.Main
-  nameWithType: Program.Main
