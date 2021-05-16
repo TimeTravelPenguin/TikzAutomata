@@ -163,6 +163,7 @@ Console.WriteLine(tikz);
   ```
 
   This proposed change will use reflection to determine what packages are required when calling `TikzFigure.Build()`.
+- Implement tape figures for turing machines. See [this page](https://tex.stackexchange.com/a/52887/227616) for example implementation. Requires pre-existing support for styles.
 
 ## Potential Implementations
 
