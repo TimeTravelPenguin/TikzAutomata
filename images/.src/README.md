@@ -1,10 +1,11 @@
 # How to compile
 
-Run the following commands in the command-line for each `.tex` file:
+Run the following commands in the command-line for each `.tex`, `.pdf`, and `.svg` file:
 
 ```console
 pdflatex latex_filename.tex
-svg2pdf latex_filename.tex latex_filename.svg
+pdf2svg pdf_filename.pdf image_filename.svg
+inkscape image_filename.svg -o image_filename.png -w width
 ```
 
-`pdflatex` and `pdf2svg` must be installed and added to the environment variables.
+`pdflatex`, `pdf2svg`, and `inkscape` must be installed and added to the environment variables.
