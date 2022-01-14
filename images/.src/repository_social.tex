@@ -9,8 +9,9 @@
 
 \contourlength{0.35pt}
 
-\tikzstyle{every path} = [draw=black]
-\tikzstyle{every state} = [fill=white]
+
+%\tikzstyle{every path} = [draw=black]
+%\tikzstyle{every state} = [fill=white]
 
 \tikzset{%
     ->,
@@ -18,6 +19,12 @@
     node distance=2cm,
     initial text=$ $,
 }
+
+%\tikzset{%
+%    every edge/.style={%
+%        text=white,
+%    }
+%}
 
 \newcommand{\nodestroke}[1]{#1}%{\contour{black}{#1}}
 
@@ -33,7 +40,7 @@
         \node[state, accepting, below of=qA] (qB) {$\beta$};
 
         % text node
-        \node [right of=qB, align=left, xshift=-6px, yshift=-1px, scale=1.25] (text) {Tikz$\righttoleftarrow$\\$\mathcal{A}$utomata};
+        \node [right of=qB, align=left, xshift=-6px, yshift=-1px, scale=1.25] (text) {Tikz$\righttoleftarrow$\\$\mathcal{A}$utonoma};
 
         \draw (q1) edge[below, bend right] node{\nodestroke{$b$}} (q2)
         (q2) edge[above, bend right] node{\nodestroke{$a$}} (q1)
