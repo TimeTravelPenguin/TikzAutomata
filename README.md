@@ -96,7 +96,7 @@ var inputNodeX1 = new TikzNode("x1", "1.1");
 var inputNodeX2 = new TikzNode("x2", "0.5");
 
 var nodeL = new TikzNode("L", @"\mathcal{L}");
-var nodeL = new TikzNode("y", @"\hat{y}");
+var nodeLY = new TikzNode("y", @"\hat{y}");
 
 var edgeBL = new TikzEdge("1.05", yShift: 3);
 var edgeX1L = new TikzEdge("-0.15");
