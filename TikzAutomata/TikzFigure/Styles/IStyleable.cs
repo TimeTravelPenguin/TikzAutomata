@@ -7,14 +7,14 @@
 // File Name: IStyleable.cs
 // 
 // Current Data:
-// 2022-01-21 11:48 PM
+// 2022-01-22 12:06 AM
 // 
 // Creation Date:
-// 2022-01-21 11:21 PM
+// 2022-01-22 12:04 AM
 
 #endregion
 
-namespace TikzAutomata.TikzFigure
+namespace TikzAutomata.TikzFigure.Styles
 {
   public interface IStyleable
   {

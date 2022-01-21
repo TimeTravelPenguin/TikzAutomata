@@ -7,14 +7,20 @@
 // File Name: INode.cs
 // 
 // Current Data:
-// 2022-01-21 11:48 PM
+// 2022-01-22 12:06 AM
 // 
 // Creation Date:
-// 2022-01-21 11:23 PM
+// 2022-01-22 12:06 AM
 
 #endregion
 
-namespace TikzAutomata.TikzFigure
+#region usings
+
+using TikzAutomata.TikzFigure.Styles;
+
+#endregion
+
+namespace TikzAutomata.TikzFigure.Nodes
 {
   public interface INode : IFigureObject, IStyleable
   {

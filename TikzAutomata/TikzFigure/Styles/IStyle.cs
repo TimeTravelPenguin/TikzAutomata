@@ -4,22 +4,19 @@
 // 
 // Solution: TikzAutomata
 // Project: TikzAutomata
-// File Name: Bend.cs
+// File Name: IStyle.cs
 // 
 // Current Data:
-// 2022-01-21 11:51 PM
+// 2022-01-22 12:06 AM
 // 
 // Creation Date:
-// 2022-01-21 11:30 PM
+// 2022-01-22 12:04 AM
 
 #endregion
 
-namespace TikzAutomata.TikzFigure
+namespace TikzAutomata.TikzFigure.Styles
 {
-  public enum Bend
+  public interface IStyle
   {
-    None,
-    Left,
-    Right
   }
 }

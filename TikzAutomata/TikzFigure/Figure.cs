@@ -7,7 +7,7 @@
 // File Name: Figure.cs
 // 
 // Current Data:
-// 2022-01-21 11:48 PM
+// 2022-01-22 12:06 AM
 // 
 // Creation Date:
 // 2022-01-21 11:05 PM
@@ -23,6 +23,9 @@
 using System;
 using System.Collections.Generic;
 using TikzAutomata.Abstractions;
+using TikzAutomata.TikzFigure.Edges;
+using TikzAutomata.TikzFigure.Nodes;
+using TikzAutomata.TikzFigure.Styles;
 
 #endregion
 
@@ -45,7 +48,7 @@ namespace TikzAutomata.TikzFigure
 
     public void AddEdge(IEdge edge)
     {
-      throw new NotImplementedException();
+      _figureEdges.Add(edge);
     }
 
     public void ApplyStyle(string styleName)

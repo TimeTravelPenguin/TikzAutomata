@@ -7,20 +7,22 @@
 // File Name: FigureNode.cs
 // 
 // Current Data:
-// 2022-01-21 11:52 PM
+// 2022-01-22 12:06 AM
 // 
 // Creation Date:
-// 2022-01-21 11:05 PM
+// 2022-01-22 12:06 AM
 
 #endregion
 
 #region usings
 
 using System;
+using TikzAutomata.TikzFigure.Base;
+using TikzAutomata.TikzFigure.Styles;
 
 #endregion
 
-namespace TikzAutomata.TikzFigure
+namespace TikzAutomata.TikzFigure.Nodes
 {
   public sealed class FigureNode : FigureObjectBase, INode
   {

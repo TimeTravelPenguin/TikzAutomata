@@ -7,14 +7,21 @@
 // File Name: IEdge.cs
 // 
 // Current Data:
-// 2022-01-21 11:54 PM
+// 2022-01-22 12:06 AM
 // 
 // Creation Date:
-// 2022-01-21 11:23 PM
+// 2022-01-22 12:05 AM
 
 #endregion
 
-namespace TikzAutomata.TikzFigure
+#region usings
+
+using TikzAutomata.TikzFigure.Nodes;
+using TikzAutomata.TikzFigure.Styles;
+
+#endregion
+
+namespace TikzAutomata.TikzFigure.Edges
 {
   public interface IEdge : IFigureObject, IStyleable
   {

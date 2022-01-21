@@ -7,10 +7,10 @@
 // File Name: FigureObjectBase.cs
 // 
 // Current Data:
-// 2022-01-21 11:48 PM
+// 2022-01-22 12:06 AM
 // 
 // Creation Date:
-// 2022-01-21 11:30 PM
+// 2022-01-22 12:04 AM
 
 #endregion
 
@@ -18,7 +18,13 @@
 
 #endregion
 
-namespace TikzAutomata.TikzFigure
+#region usings
+
+using TikzAutomata.TikzFigure.Styles;
+
+#endregion
+
+namespace TikzAutomata.TikzFigure.Base
 {
   public abstract class FigureObjectBase : IFigureObject, IStyleable
   {
