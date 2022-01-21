@@ -7,7 +7,7 @@
 // File Name: FigureEdge.cs
 // 
 // Current Data:
-// 2022-01-21 11:48 PM
+// 2022-01-21 11:53 PM
 // 
 // Creation Date:
 // 2022-01-21 11:05 PM
@@ -24,12 +24,14 @@ namespace TikzAutomata.TikzFigure
 {
   public sealed class FigureEdge : FigureObjectBase, IEdge
   {
-    public FigureEdge(string id, string text, INode nodeTip, INode nodeTail)
+    public FigureEdge(string id, string text, INode nodeTip,
+      INode nodeTail, Bend bendDirection = Bend.None)
     {
       Id = id;
       Text = text;
       NodeTip = nodeTip;
       NodeTail = nodeTail;
+      BendDirection = bendDirection;
     }
 
     #region Overrides of FigureObjectBase
@@ -50,6 +52,7 @@ namespace TikzAutomata.TikzFigure
 
     public INode NodeTip { get; set; }
     public INode NodeTail { get; set; }
+    public Bend BendDirection { get; set; }
 
     #endregion
   }

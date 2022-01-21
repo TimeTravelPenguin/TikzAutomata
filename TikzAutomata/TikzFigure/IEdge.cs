@@ -7,7 +7,7 @@
 // File Name: IEdge.cs
 // 
 // Current Data:
-// 2022-01-21 11:48 PM
+// 2022-01-21 11:54 PM
 // 
 // Creation Date:
 // 2022-01-21 11:23 PM
@@ -20,5 +20,6 @@ namespace TikzAutomata.TikzFigure
   {
     INode NodeTip { get; set; }
     INode NodeTail { get; set; }
+    Bend BendDirection { get; set; }
   }
 }
