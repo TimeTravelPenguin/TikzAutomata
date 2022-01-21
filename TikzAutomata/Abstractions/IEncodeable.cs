@@ -4,19 +4,20 @@
 // 
 // Solution: TikzAutomata
 // Project: TikzAutomata
-// File Name: IStyle.cs
+// File Name: IEncodeable.cs
 // 
 // Current Data:
-// 2022-01-14 9:04 PM
+// 2022-01-21 11:48 PM
 // 
 // Creation Date:
-// 2022-01-14 9:03 PM
+// 2022-01-21 11:13 PM
 
 #endregion
 
-namespace TikzAutomata
+namespace TikzAutomata.Abstractions
 {
-  public interface IStyle
+  public interface IEncodeable
   {
+    string Encode();
   }
 }
