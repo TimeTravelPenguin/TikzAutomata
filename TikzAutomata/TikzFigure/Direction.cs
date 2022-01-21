@@ -18,6 +18,7 @@ namespace TikzAutomata.TikzFigure
 {
   public enum Direction
   {
+    None,
     Above,
     Below,
     Left,
