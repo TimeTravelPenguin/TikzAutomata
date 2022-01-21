@@ -7,7 +7,7 @@
 // File Name: FigureNode.cs
 // 
 // Current Data:
-// 2022-01-21 11:48 PM
+// 2022-01-21 11:52 PM
 // 
 // Creation Date:
 // 2022-01-21 11:05 PM
@@ -22,7 +22,7 @@ using System;
 
 namespace TikzAutomata.TikzFigure
 {
-  public sealed class FigureNode : FigureObjectBase, IEdge
+  public sealed class FigureNode : FigureObjectBase, INode
   {
     public FigureNode(string id, string text)
     {
@@ -41,13 +41,6 @@ namespace TikzAutomata.TikzFigure
     {
       throw new NotImplementedException();
     }
-
-    #endregion
-
-    #region Implementation of IEdge
-
-    public INode NodeTip { get; set; }
-    public INode NodeTail { get; set; }
 
     #endregion
   }
