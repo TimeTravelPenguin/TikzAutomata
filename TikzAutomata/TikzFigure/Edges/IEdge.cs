@@ -7,7 +7,7 @@
 // File Name: IEdge.cs
 // 
 // Current Data:
-// 2022-01-22 12:06 AM
+// 2022-01-22 12:14 AM
 // 
 // Creation Date:
 // 2022-01-22 12:05 AM
@@ -27,6 +27,7 @@ namespace TikzAutomata.TikzFigure.Edges
   {
     INode NodeTip { get; set; }
     INode NodeTail { get; set; }
+    Direction TextDirection { get; set; }
     Bend BendDirection { get; set; }
   }
 }

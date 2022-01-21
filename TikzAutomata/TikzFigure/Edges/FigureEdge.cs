@@ -7,7 +7,7 @@
 // File Name: FigureEdge.cs
 // 
 // Current Data:
-// 2022-01-22 12:06 AM
+// 2022-01-22 12:15 AM
 // 
 // Creation Date:
 // 2022-01-22 12:05 AM
@@ -28,12 +28,13 @@ namespace TikzAutomata.TikzFigure.Edges
   public sealed class FigureEdge : FigureObjectBase, IEdge
   {
     public FigureEdge(string id, string text, INode nodeTip,
-      INode nodeTail, Bend bendDirection = Bend.None)
+      INode nodeTail, Direction textDirection = Direction.None, Bend bendDirection = Bend.None)
     {
       Id = id;
       Text = text;
       NodeTip = nodeTip;
       NodeTail = nodeTail;
+      TextDirection = textDirection;
       BendDirection = bendDirection;
     }
 
@@ -55,6 +56,7 @@ namespace TikzAutomata.TikzFigure.Edges
 
     public INode NodeTip { get; set; }
     public INode NodeTail { get; set; }
+    public Direction TextDirection { get; set; }
     public Bend BendDirection { get; set; }
 
     #endregion
