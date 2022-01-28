@@ -7,7 +7,7 @@
 // File Name: IFigureEncoder.cs
 // 
 // Current Data:
-// 2022-01-21 11:48 PM
+// 2022-01-28 10:44 PM
 // 
 // Creation Date:
 // 2022-01-21 11:21 PM
@@ -16,14 +16,12 @@
 
 #region usings
 
-using TikzAutomata.TikzFigure;
-
 #endregion
 
 namespace TikzAutomata.Encoders
 {
   public interface IFigureEncoder
   {
-    string Encode(IFigure encodeable);
+    string Encode();
   }
 }
