@@ -7,7 +7,7 @@
 // File Name: Figure.cs
 // 
 // Current Data:
-// 2022-01-22 12:06 AM
+// 2022-01-28 10:43 PM
 // 
 // Creation Date:
 // 2022-01-21 11:05 PM
@@ -22,7 +22,6 @@
 
 using System;
 using System.Collections.Generic;
-using TikzAutomata.Abstractions;
 using TikzAutomata.TikzFigure.Edges;
 using TikzAutomata.TikzFigure.Nodes;
 using TikzAutomata.TikzFigure.Styles;
@@ -31,14 +30,19 @@ using TikzAutomata.TikzFigure.Styles;
 
 namespace TikzAutomata.TikzFigure
 {
-  public class Figure : IFigure, IStyleable, IEncodeable
+  public class Figure : IFigure, IStyleable
   {
     private readonly List<IEdge> _figureEdges = new();
     private readonly List<INode> _figureNodes = new();
 
-    public string Encode()
+    public IReadOnlyCollection<INode> GetNodes()
     {
-      throw new NotImplementedException();
+      return _figureNodes.AsReadOnly();
+    }
+
+    public IReadOnlyCollection<IEdge> GetEdges()
+    {
+      return _figureEdges.AsReadOnly();
     }
 
     public void AddNode(INode node)

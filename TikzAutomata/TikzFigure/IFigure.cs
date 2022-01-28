@@ -16,6 +16,7 @@
 
 #region usings
 
+using System.Collections.Generic;
 using TikzAutomata.TikzFigure.Edges;
 using TikzAutomata.TikzFigure.Nodes;
 
@@ -25,6 +26,8 @@ namespace TikzAutomata.TikzFigure
 {
   public interface IFigure
   {
+    IReadOnlyCollection<INode> GetNodes();
+    IReadOnlyCollection<IEdge> GetEdges();
     void AddNode(INode node);
     void AddEdge(IEdge edge);
   }
